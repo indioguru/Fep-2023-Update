@@ -1,0 +1,41 @@
+.accordion {
+  .accordion-item-title {
+    border-bottom: 0;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+  }
+
+  .accordion-item-body {
+    height: 0;
+    overflow: hidden;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .accodion-item:last-child {
+    .accordion-item-title {
+    }
+  }
+
+  .active {
+    .more_item {
+      width: 25px;
+      height: 3px;
+      background: url(/assets/iconos/kmenos.png);
+      background-position: center;
+      background-size: cover;
+    }
+    .accordion-item-title {
+    }
+    .accordion-item-body {
+      height: auto;
+      padding: 15px 5px;
+      width: 95%;
+    }
+  }
+}

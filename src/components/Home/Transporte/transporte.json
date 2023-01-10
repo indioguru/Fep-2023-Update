@@ -1,0 +1,50 @@
+[
+    {
+        "buses": [
+            {
+                "tipo": "IDA",
+                "tipo_ingles": "ONE WAY TO",
+                "precio": "$ 63.000 COP",
+                "full_precio": "$ 75.000 COP",
+                "combo_3_dias": true
+            },
+            {
+                "tipo": "REGRESO",
+                "tipo_ingles": "ONE WAY FROM",
+                "precio": "$ 88.000 COP",
+                "full_precio": "$ 105.000 COP",
+                "combo_3_dias": true
+            },
+            {
+                "tipo": "ROUND TRIP",
+                "tipo_ingles": "ROUND TRIP",
+                "precio": "$ 113.000 COP",
+                "full_precio": "$ 135.000 COP",
+                "combo_3_dias": true
+            }
+        ],
+        "elegido": [
+            {
+                "tipo": "IDA",
+                "tipo_ingles": "ONE WAY TO",
+                "precio": "$ 84.000 COP",
+                "full_precio": "$ 100.000 COP",
+                "combo_3_dias": true
+            },
+            {
+                "tipo": "REGRESO",
+                "tipo_ingles": "ONE WAY FROM",
+                "precio": "$ 117.000 COP",
+                "full_precio": "$ 140.000 COP",
+                "combo_3_dias": true
+            },
+            {
+                "tipo": "ROUND TRIP",
+                "tipo_ingles": "ROUND TRIP",
+                "precio": "$ 151.000 COP",
+                "full_precio": "$ 180.000 COP",
+                "combo_3_dias": true
+            }
+        ]
+    }
+]

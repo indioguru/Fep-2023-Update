@@ -1,0 +1,129 @@
+.alcancias {
+  background-color: #807ab9;
+  border-top: 3px solid black;
+  position: relative;
+
+  .principalButtom {
+    position: relative;
+    z-index: 10;
+  }
+
+  @media (min-width: 999px) {
+    padding-top: 60px;
+    padding-bottom: 100px;
+
+    .containerAll {
+      position: relative;
+      z-index: 5;
+      padding-top: 20px;
+      padding-bottom: 120px;
+    }
+
+    .titulo {
+      text-align: left;
+    }
+
+    .principalButtom {
+      transform: translate(0px, 0px);
+      margin: initial;
+    }
+    img {
+      width: 40%;
+    }
+  }
+
+  .alcalcias_imagenes-bottom {
+    img {
+      position: absolute;
+      z-index: 5;
+    }
+    .suelo {
+      background-color: #39b44d;
+      position: absolute;
+      height: 80px;
+      width: 100%;
+      bottom: 0;
+      border-top: 3px solid black;
+      border-bottom: 3px solid black;
+
+      @media (min-width: 999px) {
+        height: 140px;
+      }
+    }
+
+    .vaca {
+      position: relative;
+      width: 200px;
+      padding-top: 70px;
+      transform: translate(55%, -30px);
+
+      @media (min-width: 999px) {
+        position: absolute;
+        width: 400px;
+        transform: translate(0%, 0px);
+        bottom: 10%;
+        right: 25%;
+      }
+    }
+
+    .sol {
+      width: 40px;
+      right: 10%;
+      bottom: 33%;
+
+      @media (min-width: 999px) {
+        width: 75px;
+        top: 10%;
+      }
+    }
+
+    .arbustos1 {
+      width: 165px;
+      left: 0;
+      bottom: 70px;
+      z-index: 2;
+
+      @media (min-width: 999px) {
+        width: 330px;
+      }
+    }
+    .arbustos2 {
+      width: 165px;
+      right: 0;
+      bottom: 76px;
+      z-index: 2;
+
+      @media (min-width: 999px) {
+        width: 330px;
+        bottom: 125px;
+      }
+    }
+    .flor1 {
+      width: 75px;
+      bottom: 5%;
+      left: 5%;
+      @media (min-width: 999px) {
+        width: 150px;
+        bottom: 0%;
+        left: 35%;
+      }
+    }
+    .miniplantas {
+      width: 50px;
+      bottom: 5%;
+      right: 7%;
+      @media (min-width: 999px) {
+        width: 70px;
+        bottom: 6%;
+        right: 14%;
+      }
+    }
+  }
+
+  p {
+    padding-bottom: 30px;
+    @media (min-width: 999px) {
+      width: 40%;
+    }
+  }
+}

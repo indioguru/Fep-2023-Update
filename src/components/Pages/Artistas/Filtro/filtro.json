@@ -1,0 +1,36 @@
+[
+    {
+        "dia": "Todos",
+        "day": "ALL",
+        "fecha": "",
+        "valor": "todos"
+    },
+    {
+        "dia": "Jueves",
+        "day": "THURSDAY",
+        "fecha": "23 DE MARZO 2023",
+        "date": " MARCH 23RD 2023",
+        "valor": "jueves"
+    },
+    {
+        "dia": "Viernes",
+        "day": "FRIDAY",
+        "fecha": "24 DE MARZO 2023",
+        "date": " MARCH 24TH 2023",
+        "valor": "viernes"
+    },
+    {
+        "dia": "Sábado",
+        "day": "SATURDAY",
+        "fecha": "25 DE MARZO 2023",
+        "date": " MARCH 25TH 2023",
+        "valor": "sábado"
+    },
+    {
+        "dia": "Domingo",
+        "day": "SUNDAY",
+        "fecha": "26 DE MARZO 2023",
+        "date": " MARCH 26TH 2023",
+        "valor": "domingo"
+    }
+]

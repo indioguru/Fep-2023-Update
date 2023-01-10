@@ -1,0 +1,204 @@
+.page-artistas {
+  overflow: hidden;
+  .containerAll {
+    overflow: hidden;
+  }
+
+  &_banner {
+    background-color: #30a7de;
+    height: 325px;
+    position: relative;
+    max-width: 1600px;
+    margin: 0px auto;
+    @media (min-width: 999px) {
+      height: 80vh;
+      min-height: 500px;
+      max-height: 700px;
+    }
+    .suelo {
+      height: 30%;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      background-color: #82c76f;
+    }
+
+    img {
+      position: absolute;
+    }
+
+    .montains {
+      bottom: 0%;
+      width: 700px;
+      position: absolute;
+      right: -180px;
+
+      @media (min-width: 500px) {
+        width: 100%;
+        right: 0;
+      }
+    }
+
+    .flor {
+      width: 50px;
+      bottom: 0;
+      left: 10%;
+
+      @media (min-width: 999px) {
+        width: 12%;
+        bottom: 0%;
+        left: 15%;
+      }
+    }
+
+    // .artistas {
+    //   position: absolute;
+    //   width: calc(636px / 4);
+    //   height: 110px;
+    //   background: url("/assets/anim_steps/artistas_movil.png");
+    //   animation: artistas 1s steps(4) infinite;
+    //   bottom: 5%;
+    //   right: 15%;
+
+    //   @media (min-width: 999px) {
+    //     width: calc(1735px / 4);
+    //     height: 300px;
+    //     background: url("/assets/anim_steps/artistas_desktop.png");
+    //     right: 30%;
+    //     animation: artistas_destock 1s steps(4) infinite;
+    //     @keyframes artistas_destock {
+    //       0% {
+    //         background-position: 0;
+    //       }
+
+    //       100% {
+    //         background-position: 1735px;
+    //       }
+    //     }
+    //   }
+    // }
+
+    .artistas {
+      width: 150px;
+      bottom: 5%;
+      right: 15%;
+
+      @media (min-width: 999px) {
+        width: 25%;
+        right: 30%;
+      }
+    }
+
+    @keyframes artistas {
+      0% {
+        background-position: 0;
+      }
+
+      100% {
+        background-position: 636px;
+      }
+    }
+
+    h1 {
+      font-family: "Block_Berthold_Regular";
+      position: absolute;
+      top: 35%;
+      left: 10%;
+
+      @media (min-width: 999px) {
+        top: 24%;
+        left: 12%;
+        font-size: 50px;
+      }
+    }
+
+    .logo {
+      width: 65%;
+      top: 5%;
+      right: 10%;
+      max-width: 500px;
+
+      @media (min-width: 999px) {
+        margin: 0px auto;
+        right: 0;
+        left: 0;
+      }
+    }
+  }
+
+  &_filtro {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: 999px) {
+      margin: 50px 0;
+    }
+    .filtro-artista-container {
+      text-align: center;
+      width: 50%;
+      margin: 15px 0;
+      @media (min-width: 999px) {
+        width: 20%;
+      }
+
+      .filtro-artista {
+        width: fit-content;
+        margin: 0px auto;
+        padding: 4px 10px;
+        cursor: pointer;
+        transition: 0.5s background;
+        border-radius: 10px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .dia {
+          font-family: "Block_Berthold_Regular";
+          color: white;
+          -webkit-text-stroke: 1px black;
+          font-size: 25px;
+          line-height: 15px;
+        }
+
+        .fecha {
+          font-family: "greycliffcf-bold";
+          font-size: 15px;
+          margin-top: 1px;
+        }
+
+        &:hover {
+          background: #f179ae;
+          border: 1px solid black;
+        }
+      }
+    }
+
+    .filtro-artistas-active {
+      .filtro-artista {
+        background: #f179ae;
+        border: 1px solid black;
+      }
+    }
+
+    #filtro-artista-todos {
+      width: 100%;
+
+      @media (min-width: 999px) {
+        width: 20%;
+      }
+    }
+  }
+
+  &_artistas {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    transform: translate(0, 250px);
+  }
+
+  .artistasContainerAnimation {
+    transform: translate(0px, 0px);
+    transition: 0.5s all;
+  }
+}

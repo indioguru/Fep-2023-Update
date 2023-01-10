@@ -1,0 +1,36 @@
+.memorias {
+  background-color: #807ab9;
+  border-top: 4px solid black;
+  position: relative;
+  .titulo {
+    span {
+      width: 100%;
+    }
+  }
+
+
+  .iframe_container {
+    background: white;
+    padding: 10px;
+    border: 2px solid black;
+    width: fit-content;
+    margin: 0px auto;
+
+    p {
+      font-family: "ClarelSerif-Medium";
+    }
+  }
+
+  .botones {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    width: 50%;
+    max-width: 300px;
+    margin: 0px auto;
+    img {
+      width: 30px;
+      cursor: pointer;
+    }
+  }
+}

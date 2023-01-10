@@ -1,0 +1,56 @@
+.atrapalo {
+  background-color: #eee5d4;
+  position: relative;
+  border-bottom: 3px solid black;
+
+  .medio_pajaro {
+    width: 145px;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+  .nube {
+    position: absolute;
+    bottom: 25%;
+    width: 200px;
+    right: 0%;
+  }
+
+  .nube2 {
+    bottom: 10%;
+    width: 150px;
+    right: 20%;
+  }
+
+  @media (min-width: 999px) {
+    min-height: 500px;
+    .containerAll {
+      display: flex;
+      justify-content: end;
+    }
+
+    .info {
+      width: 50%;
+      padding-top: 50px;
+    }
+
+    .medio_pajaro {
+      width: 200px;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .nube {
+      width: 250px;
+      right: 55%;
+      top: 10%;
+    }
+
+    .nube2 {
+      width: 150px;
+      right: 60%;
+      top: 30%;
+    }
+  }
+}

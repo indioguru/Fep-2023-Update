@@ -1,0 +1,119 @@
+.comoLlegar {
+  @import "./mapa";
+  @import "./buses";
+  @import "./vans";
+  @import "./conductorElegido";
+
+  &_container {
+    background-color: #30a7de;
+    z-index: -2;
+    position: relative;
+    .title {
+      text-align: center;
+      font-size: 25px;
+      font-family: Block_Berthold_Regular;
+      padding-top: 50px;
+
+      @media (min-width: 768px) {
+        font-size: 45px;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 55px;
+      }
+    }
+
+    .content_banner {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      @media (min-width: 768px) {
+        height: 450px;
+      }
+      .containerAll2 {
+        background-color: #30a7de;
+        height: 250px;
+        position: relative;
+        @media (min-width: 768px) {
+          height: 450px;
+        }
+      }
+      .flor {
+        position: absolute;
+        width: 80px;
+        bottom: 5%;
+        right: 0;
+        z-index: 2;
+        @media (min-width: 768px) {
+          width: 160px;
+          right: 10%;
+        }
+      }
+
+      .nube1 {
+        position: absolute;
+        width: 120px;
+        z-index: 2;
+        @media (min-width: 768px) {
+          width: 180px;
+        }
+        @media (min-width: 1200px) {
+          width: 340px;
+          left: 10%;
+        }
+      }
+
+      .enrredadera {
+        position: absolute;
+        width: 200px;
+        bottom: 20%;
+      }
+
+      .nube2 {
+        position: absolute;
+        width: 100px;
+        right: 0;
+        z-index: 2;
+        top: -30%;
+        @media (min-width: 768px) {
+          width: 160px;
+        }
+
+        @media (min-width: 1200px) {
+          width: 260px;
+        }
+      }
+
+      .transporte {
+        position: absolute;
+        width: 150px;
+        left: 20%;
+        bottom: 5%;
+        z-index: 2;
+        @media (min-width: 768px) {
+          width: 250px;
+        }
+
+        @media (min-width: 1200px) {
+          left: 40%;
+        }
+      }
+
+      .suelo {
+        position: absolute;
+        height: 20%;
+        width: 100%;
+        background-color: #1e9c4f;
+        z-index: 0;
+        bottom: 0;
+        border-top: 2px black solid;
+        border-bottom: 2px black solid;
+
+        @media (min-width: 768px) {
+          height: 30%;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}

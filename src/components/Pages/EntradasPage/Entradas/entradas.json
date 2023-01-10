@@ -1,0 +1,44 @@
+[
+  {
+    "tipo": "general",
+    "precio": "$ 999,000 cop / $ 210,55 USD + Servicio ",
+    "combo_3_dias": true,
+    "etapa": 1,
+    "agotado": false
+  },
+  {
+    "tipo": "general",
+    "precio": "$ 1,099,000 cop / $ 237,9 USD + Servicio",
+    "combo_3_dias": true,
+    "etapa": 2,
+    "agotado": false
+  },
+  {
+    "tipo": "general",
+    "precio": "$ 1,199,000 cop / $ 259,5 USD + Servicio",
+    "combo_3_dias": false,
+    "etapa": 1,
+    "agotado": false
+  },
+  {
+    "tipo": "general",
+    "precio": "$ 1,300,000 cop / $ 281,4 USD + Servicio",
+    "combo_3_dias": false,
+    "etapa": 2,
+    "agotado": false
+  },
+  {
+    "tipo": "vip",
+    "precio": "$ 2,149,000 cop / $ 465,2 USD + Servicio",
+    "combo_3_dias": true,
+    "etapa": "ÚNICA",
+    "agotado": false
+  },
+  {
+    "tipo": "vip",
+    "precio": "$ 2,699,000 cop / $ 584,2 USD + Servicio",
+    "combo_3_dias": false,
+    "etapa": "ÚNICA",
+    "agotado": false
+  }
+]

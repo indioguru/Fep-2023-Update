@@ -1,0 +1,32 @@
+.lineup {
+  background-color: #6faadc;
+  padding-bottom: 55px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: 999px) {
+    padding-bottom: 220px;
+  }
+
+  .planta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+  }
+
+  .montanas_rosadas {
+    position: absolute;
+    bottom: -20px;
+    display: block;
+    width: 110%;
+    left: -2%;
+    max-width: 1600px;
+    margin: 0px auto;
+    right: 0;
+  }
+
+  .lineup_img {
+    margin: 0px auto;
+  }
+}

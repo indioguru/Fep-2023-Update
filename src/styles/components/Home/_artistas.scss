@@ -1,0 +1,180 @@
+.home-artistas {
+  position: relative;
+  height: 100vh;
+  min-height: 900px;
+
+  p {
+    color: white;
+  }
+
+  @media (min-width: 999px) {
+    display: flex;
+    height: auto;
+    min-height: 550px;
+  }
+
+  .home-artistas-desktop {
+    display: flex;
+  }
+
+  .allSlides {
+    width: 50%;
+  }
+
+  .mySlides {
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+
+    @media (min-width: 999px) {
+      position: relative;
+    }
+
+    .artista-common {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0px auto;
+      margin-bottom: 0px;
+      bottom: 25%;
+
+      @media (min-width: 999px) {
+        position: relative;
+        bottom: initial;
+        top: 50%;
+        transform: translate(0px, -50%);
+        width: 60%;
+        max-width: 400px;
+      }
+    }
+
+    // &:nth-child(1) {
+    //   background: #743696;
+    // }
+
+    // &:nth-child(2) {
+    //   background: #f4792e;
+    // }
+
+    // &:nth-child(3) {
+    //   background: #2f77bd;
+    // }
+
+    // &:nth-child(4) {
+    //   background: #0f6338;
+    // }
+
+    // &:nth-child(5) {
+    //   background: #714a48;
+    // }
+
+    // &:nth-child(6) {
+    //   background: #ca5448;
+    // }
+
+    // &:nth-child(7) {
+    //   background: #ca5448;
+    // }
+
+    // &:nth-child(8) {
+    //   background: #1f429a;
+    // }
+  }
+
+  .dots {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+
+    @media (min-width: 999px) {
+      position: relative;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      top: 0;
+    }
+
+    .dot {
+      font-family: "greycliffcf-bold";
+      color: white;
+      text-transform: uppercase;
+      line-height: 30px;
+      cursor: pointer;
+      transition: 0.3s all;
+
+      @media (min-width: 999px) {
+        font-size: 20px;
+        line-height: 35px;
+      }
+    }
+
+    .active {
+      font-size: 28px;
+
+      @media (min-width: 999px) {
+        font-size: 32px;
+      }
+    }
+  }
+
+  h2 {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin: 0px auto;
+    color: white;
+    top: 6%;
+    -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+
+    @media (min-width: 999px) {
+      top: 17%;
+      margin: initial;
+      font-size: 40px;
+    }
+  }
+
+  .flechas {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0px auto;
+    left: 0;
+    right: 0;
+    bottom: 17%;
+    max-width: 300px;
+
+    @media (min-width: 999px) {
+      position: relative;
+      bottom: 12%;
+    }
+
+    img {
+      width: 40px;
+      cursor: pointer;
+    }
+  }
+
+  .principalButtom {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 70%;
+    right: 0;
+    margin: 0px auto;
+    text-align: center;
+
+    @media (min-width: 999px) {
+      position: absolute;
+      right: initial;
+      bottom: 11%;
+      margin: initial;
+      width: 50%;
+    }
+  }
+}

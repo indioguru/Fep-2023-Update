@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden !important;
+  background-color: #6faadc;
+  width: 100vw;
+}
+
+.home {
+  overflow: hidden;
+}
+
+.noScroll {
+  overflow: hidden;
+}
+
+code {
+  white-space: break-spaces;
+}
+
+// Colors
+$base-color: #c6538c;
+
+$color-1: #00b2e3;
+$color-2: #e43d30;
+$color-3: #f89aba;
+$color-4: #ffb71b;
+$color-5: #45a041;
+
+$red-darker: #c9003e;
+$green-darker: #009966;
+$green: #6d9b11;
+
+$black: #231f20;
+$red: #ff004f;
+$purple: #6300ff;
+$orange: #ff4200;
+$blue: rgb(64, 64, 255);
+$aqua: #3dd3f7;
+$yellow: #ffaa00;
+$pink: #c9003e;
+$white: #e1dbcd;
+
+$blackLight: #231f208e;
+
+$breakpoint-laptop: 1440px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 425px;
+$borders-size: 4px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 425px;
+
+/* FONTS */
+@font-face {
+  font-family: "ABCFavorit-Book-Trial";
+  src: url("../assets/fonts/ABCFavorit-Book-Trial.woff2") format("woff2"),
+    url("../assets/fonts/ABCFavorit-Book-Trial.woff") format("woff"),
+    url("../assets/fonts/ABCFavorit-Book-Trial.otf") format("otf");
+}
+
+@font-face {
+  font-family: "NHAASGROTESKDSPRO-55RG";
+  src: url("../assets/fonts/NHAASGROTESKDSPRO-55RG.woff2") format("woff2"),
+    url("../assets/fonts/NHAASGROTESKDSPRO-55RG.woff") format("woff"),
+    url("../assets/fonts/NHAASGROTESKDSPRO-55RG.OTF") format("otf");
+}
+
+@font-face {
+  font-family: "NHAASGROTESKDSPRO-65MD";
+  src: url("../assets/fonts/NHAASGROTESKDSPRO-65MD.woff2") format("woff2"),
+    url("../assets/fonts/NHAASGROTESKDSPRO-65MD.woff") format("woff"),
+    url("../assets/fonts/NHAASGROTESKDSPRO-65MD.OTF") format("otf");
+}
+
+@font-face {
+  font-family: "ClarelSerif-Medium";
+  src: url("../assets/fonts/ClarelSerif-Medium.woff2") format("woff2"),
+    url("../assets/fonts/ClarelSerif-Medium.woff") format("woff"),
+    url("../assets/fonts/ClarelSerif-Medium.otf") format("otf");
+}
+
+@font-face {
+  font-family: "ClarelSerif-Bold";
+  src: url("../assets/fonts/ClarelSerif-Bold.woff2") format("woff2"),
+    url("../assets/fonts/ClarelSerif-Bold.woff") format("woff"),
+    url("../assets/fonts/ClarelSerif-Bold.otf") format("otf");
+}
+
+@font-face {
+  font-family: "ClarelSerif-Bold";
+  src: url("../assets/fonts/ClarelSerif-Bold.woff2") format("woff2"),
+    url("../assets/fonts/ClarelSerif-Bold.woff") format("woff"),
+    url("../assets/fonts/ClarelSerif-Bold.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Block_Berthold_Regular";
+  src: url("../assets/fonts/Block_Berthold_Regular.woff2") format("woff2"),
+    url("../assets/fonts/Block_Berthold_Regular.woff") format("woff"),
+    url("../assets/fonts/Block_Berthold_Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Block_Berthold_Regular";
+  src: url("../assets/fonts/Block_Berthold_Regular.woff2") format("woff2"),
+    url("../assets/fonts/Block_Berthold_Regular.woff") format("woff"),
+    url("../assets/fonts/Block_Berthold_Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "greycliffcf-regular";
+  src: url("../assets/fonts/GreycliffCF-Regular.woff2") format("woff2"),
+    url("../assets/fonts/GreycliffCF-Regular.woff") format("woff"),
+    url("../assets/fonts/GreycliffCF-Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "greycliffcf-bold";
+  src: url("../assets/fonts/GreycliffCF-Bold.woff2") format("woff2"),
+    url("../assets/fonts/GreycliffCF-Bold.woff") format("woff"),
+    url("../assets/fonts/GreycliffCF-Bold.otf") format("otf");
+}
+
+body {
+  font-family: "greycliffcf-regular", "Helvetica";
+  overflow-y: hidden;
+}
+
+.scrollX {
+  overflow: scroll;
+}
+
+h2 {
+  font-family: "Block_Berthold_Regular", "Helvetica";
+  font-size: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: 999px) {
+    font-size: 60px;
+  }
+}
+
+.titulo {
+  text-align: center;
+  padding: 30px 0;
+
+  p {
+    font-size: 30px;
+    transform: translate(0px, 30px);
+    font-family: "greycliffcf-bold";
+  }
+
+  span {
+    padding: 20px;
+    display: block;
+    font-size: 20px;
+    width: 50%;
+    margin: 0px auto;
+  }
+}
+
+.containerAll {
+  width: 90%;
+  margin: 0px auto;
+  max-width: 1200px;
+
+}
+
+.principalButtom {
+  display: block;
+  background-color: #5f3c6d;
+  width: fit-content;
+  margin: 0px auto;
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-family: "greycliffcf-bold";
+  font-weight: 800;
+  color: #ffffff;
+  transition: 0.5s all;
+
+  &:hover {
+    background-color: transparent;
+    color: #5f3c6d;
+    border: transparent;
+    font-size: 25px;
+    -webkit-text-stroke: 0.1px black;
+    cursor: pointer;
+  }
+
+  @media (min-width: 999px) {
+    font-size: 20px;
+  }
+}
+
+.boton_entradaMovil {
+  width: 55px;
+  height: 55px;
+  position: fixed;
+  background-color: #f4792e;
+  z-index: 200;
+  bottom: 5%;
+  right: 5%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+
+  .menosicono {
+    opacity: 0;
+  }
+  img {
+    width: 80%;
+    position: absolute;
+    transition: 0.5s all;
+  }
+}
+.active_botonMovil {
+  .menosicono {
+    opacity: 1;
+  }
+  .entradaicono {
+    opacity: 0;
+  }
+}
+
+.botones_home {
+  position: fixed;
+  right: 2%;
+  top: 4%;
+  z-index: 150;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s all;
+  opacity: 0;
+  visibility: hidden;
+
+  @media (max-width: "999px") {
+    bottom: 15%;
+    top: initial;
+  }
+
+  @media (min-width: "999px") {
+    justify-content: space-between;
+    flex-direction: row;
+    // width: 600px;
+    width: 400px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .principalButtom {
+    font-size: 15px;
+    font-family: "Block_Berthold_Regular";
+    -webkit-text-stroke: 0.8px black;
+
+    @media (max-width: "999px") {
+      width: 200px;
+      text-align: center;
+      font-size: 10px;
+      background-color: #f59686 !important;
+      color: black;
+      font-family: "greycliffcf-regular";
+      margin-bottom: 10px;
+    }
+  }
+
+  .buttom_pink {
+    font-family: "greycliffcf-regular";
+  }
+
+  .buttom_orange {
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.sticky_menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+}
+
+.active_botones {
+  opacity: 1;
+  visibility: visible;
+}
+
+.buttom_orange {
+  background-color: #ff4422;
+  transition: 0.2s all;
+
+  &:hover {
+    background-color: #5f3c6d;
+  }
+}
+
+.buttom_pink {
+  background-color: #f59686;
+  transition: 0.2s all;
+  color: black;
+  -webkit-text-stroke: 0px black;
+
+  &:hover {
+    background-color: #f086b5;
+  }
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex {
+  display: flex;
+}
+
+.lg-backdrop {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+#lg-download-1 {
+  display: none;
+}
+
+#lg-components-1 {
+  display: none;
+}
+
+.lg-outer .lg-content {
+  top: 0 !important;
+}
+
+hr {
+  background: black;
+  border: 1px black solid;
+  margin-top: 50px;
+}
+
+.politica {
+  ol,
+  ul {
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  h2,
+  h1 {
+    padding: 20px 0;
+  }
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hamburguesa {
+  position: fixed;
+  z-index: 150;
+  top: 3%;
+  left: 5%;
+
+  img {
+    width: 45px;
+    cursor: pointer;
+    @media (min-width: 999px) {
+      width: 80px;
+    }
+  }
+}
+
+// .logo_pages {
+//   width: 65% !important;
+//   top: 4% !important;
+//   right: 10% !important;
+//   max-width: 500px !important;
+//   position: absolute;
+
+//   @media (min-width: 999px) {
+//     // margin: 0px auto;
+//     right: 0;
+//     left: 0;
+//   }
+// }
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  img {
+    width: 250px;
+    margin: 20px 40px 20px 20px;
+
+    @media (min-width: 768px) {
+      width: 300px;
+      margin: 20px 20px 20px 15%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+
+.boton_sin_background {
+  color: white;
+  background: none;
+  border: none;
+}

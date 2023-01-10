@@ -1,0 +1,283 @@
+.entradas-section {
+  background-color: #f086b5;
+  position: relative;
+
+  .container_button {
+    padding-bottom: 100px;
+  }
+
+  .containerAll {
+    position: initial;
+  }
+
+  .titulo {
+    padding-top: 60px;
+  }
+
+  .entradas_all_container {
+    @media (min-width: 999px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .entradas_container {
+    width: 100%;
+
+    @media (min-width: 999px) {
+      width: 45%;
+    }
+
+    .mini_title {
+      font-family: "greycliffcf-bold";
+      padding-top: 20px;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+
+    .entradas_titulo {
+      position: relative;
+      text-align: center;
+      height: 50px;
+      font-family: "greycliffcf-bold";
+      font-size: 25px;
+      width: fit-content;
+      margin: 0px auto;
+
+      img {
+        position: absolute;
+        width: 50px;
+      }
+
+      .mariposanegra2 {
+        right: -60px;
+        top: -25px;
+      }
+
+      .mariposa {
+        left: -65px;
+        top: -28px;
+        width: 70px;
+      }
+    }
+
+    .enrredadera {
+      position: absolute;
+      width: 60px;
+      left: 0;
+
+      @media (min-width: "999px") {
+        width: 160px;
+        top: 0;
+      }
+    }
+    .rosa {
+      position: absolute;
+      width: 70px;
+      right: -19px;
+      top: 56%;
+
+      @media (min-width: "999px") {
+        width: 140px;
+        right: 0;
+        top: 20%;
+      }
+    }
+
+    .entradas_items {
+      border: 2px solid black;
+      padding: 0 30px;
+      padding-bottom: 20px;
+      background: #da6fac;
+
+      .entrada {
+        display: flex;
+        border-bottom: 1.9px solid white;
+        // align-items: center;
+        // height: 50px;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        p {
+          padding: 10px;
+        }
+
+        .etapa {
+          border-right: 2px solid white;
+          width: 20%;
+          font-family: "greycliffcf-bold";
+          padding-left: 0;
+          font-size: 12px;
+          text-transform: uppercase;
+          @media (min-width: 999px) {
+            font-size: 15px;
+          }
+        }
+
+        .precio {
+          width: 75%;
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          @media (min-width: 999px) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .entradas_container_vip {
+    margin-top: 50px;
+    position: relative;
+
+    @media (min-width: 999px) {
+      position: initial;
+      margin-top: 0;
+    }
+  }
+
+  .trm_info {
+    margin: 0px auto;
+    padding: 50px 0;
+    font-size: 12px;
+
+    @media (min-width: 999px) {
+      text-align: center;
+      width: 50%;
+    }
+  }
+
+  .alcancias {
+    background-color: #30a7de;
+    border-top: 3px solid black;
+    position: relative;
+
+    .principalButtom {
+      position: relative;
+      z-index: 10;
+    }
+
+    @media (min-width: 999px) {
+      padding-top: 60px;
+      padding-bottom: 100px;
+
+      .containerAll {
+        position: relative;
+        z-index: 5;
+        padding-top: 20px;
+        padding-bottom: 120px;
+      }
+
+      .titulo {
+        text-align: left;
+      }
+
+      .principalButtom {
+        transform: translate(0px, 0px);
+        margin: initial;
+      }
+      img {
+        width: 40%;
+      }
+    }
+
+    .alcalcias_imagenes-bottom {
+      img {
+        position: absolute;
+        z-index: 5;
+      }
+      .suelo {
+        background-color: #39b44d;
+        position: absolute;
+        height: 80px;
+        width: 100%;
+        bottom: 0;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+
+        @media (min-width: 999px) {
+          height: 140px;
+        }
+      }
+
+      .vaca {
+        position: relative;
+        width: 200px;
+        padding-top: 70px;
+        transform: translate(55%, -30px);
+
+        @media (min-width: 999px) {
+          position: absolute;
+          width: 400px;
+          transform: translate(0%, 0px);
+          bottom: 10%;
+          right: 25%;
+        }
+      }
+
+      .sol {
+        width: 40px;
+        right: 10%;
+        bottom: 33%;
+
+        @media (min-width: 999px) {
+          width: 75px;
+          top: 10%;
+        }
+      }
+
+      .arbustos1 {
+        width: 165px;
+        left: 0;
+        bottom: 70px;
+        z-index: 2;
+
+        @media (min-width: 999px) {
+          width: 330px;
+        }
+      }
+      .arbustos2 {
+        width: 165px;
+        right: 0;
+        bottom: 76px;
+        z-index: 2;
+
+        @media (min-width: 999px) {
+          width: 330px;
+          bottom: 125px;
+        }
+      }
+      .flor1 {
+        width: 75px;
+        bottom: 5%;
+        left: 5%;
+        @media (min-width: 999px) {
+          width: 150px;
+          bottom: 0%;
+          left: 35%;
+        }
+      }
+      .miniplantas {
+        width: 50px;
+        bottom: 5%;
+        right: 7%;
+        @media (min-width: 999px) {
+          width: 70px;
+          bottom: 6%;
+          right: 14%;
+        }
+      }
+    }
+
+    p {
+      padding-bottom: 30px;
+      @media (min-width: 999px) {
+        width: 40%;
+      }
+    }
+  }
+}

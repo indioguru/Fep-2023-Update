@@ -1,0 +1,114 @@
+[
+  {
+    "tipo": "general",
+    "dia": "1",
+    "precio": "$999.000 cop / $ 210.55 USD + Servicio ",
+    "etapa": 1,
+    "agotado": false
+  },
+  {
+    "tipo": "general",
+    "dia": "1",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": 2,
+    "agotado": false
+  },
+  {
+    "tipo": "general",
+    "dia": "1",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": 3,
+    "agotado": false
+  },
+  {
+    "tipo": "general",
+    "dia": "2",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": 1,
+    "agotado": false
+  },
+  {
+    "tipo": "general",
+    "dia": "2",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": 2,
+    "agotado": false
+  },
+  {
+    "tipo": "general",
+    "dia": "2",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": 3,
+    "agotado": false
+  },
+  {
+    "tipo": "general",
+    "dia": "3",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": 1,
+    "agotado": false
+  },
+  {
+    "tipo": "general",
+    "dia": "3",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": 2,
+    "agotado": false
+  },
+  {
+    "tipo": "general",
+    "dia": "3",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": 3,
+    "agotado": false
+  },
+  {
+    "tipo": "general",
+    "dia": "4",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": 1,
+    "agotado": false
+  },
+  {
+    "tipo": "general",
+    "dia": "4",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": 2,
+    "agotado": false
+  },
+  {
+    "tipo": "general",
+    "dia": "4",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": 3,
+    "agotado": false
+  },
+  {
+    "tipo": "vip",
+    "dia": "1",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": "Única",
+    "agotado": false
+  },
+  {
+    "tipo": "vip",
+    "dia": "2",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": "Única",
+    "agotado": false
+  },
+  {
+    "tipo": "vip",
+    "dia": "3",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": "Única",
+    "agotado": false
+  },
+  {
+    "tipo": "vip",
+    "dia": "4",
+    "precio": "$ 999,000 cop / $ 216,2 USD + Servicio ",
+    "etapa": "Única",
+    "agotado": false
+  }
+]

@@ -1,0 +1,34 @@
+@import "./base";
+@import "./utils";
+
+@import "./components/Footer/footer";
+@import "./components/Menu/menu";
+
+@import "./components/Home/intro";
+@import "./components/Home/entradas";
+@import "./components/Home/video";
+@import "./components/Home/transporte";
+@import "./components/Home/artistas";
+@import "./components/Home/polla";
+@import "./components/Home/banner";
+@import "./components/Home/lineup";
+@import "./components/Home/memorias";
+@import "./components/Home/beneficios";
+
+@import "./components/EntradasPage/entradasPage.scss";
+@import "./components/Artistas/artistas";
+@import "./components/Artistas/artista-page";
+@import "./components/Faqs/faqs";
+@import "./components/Pages/guiaviajero";
+@import "./components/Pages/vip";
+@import "./components/Pages/cashless";
+@import "./components/Pages/galeria";
+@import "./components/Pages/prensa";
+@import "./components/Pages/horarios";
+@import "./components/Pages/comoLlegar/comoLlegar";
+@import "./components/Pages/memorias";
+@import "./components/Pages/sponsors";
+
+@import "./Common/loader";
+@import "./Common/accordion";
+@import "./Common/artista";

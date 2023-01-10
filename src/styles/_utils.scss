@@ -1,0 +1,157 @@
+.absolute-centered {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.page_title {
+    border-top: none;
+    background-color: #ffb71b;
+    font-size: 30px;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 4px solid black;
+  }
+
+
+.text-center {
+    text-align: center;
+}
+
+.transition {
+    transition: 0.3s ease-in-out;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.flex-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.border-t {
+    border-top: 4px solid black;
+}
+.border-b {
+    border-bottom: 4px solid black;
+}
+.border-tb {
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+.border-r {
+    border-right: 4px solid black;
+}
+.border-l {
+    border-left: 4px solid black;
+}
+.border-lr {
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+}
+
+.bg-color-1 {
+    background-color: $color-1;
+}
+.bg-color-2 {
+    background-color: $color-2;
+}
+.bg-color-3 {
+    background-color: $color-3;
+}
+.bg-color-4 {
+    background-color: $color-4;
+}
+.bg-color-5 {
+    background-color: $color-5;
+}
+
+.list-none {
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.section-header {
+    font-size: 30px;
+    padding: 10px 0;
+    text-align: center;
+    @extend .border-tb;
+}
+
+.absolute-hidden {
+    z-index: -1000;
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.full-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.color-yellow {
+    color: $color-4;
+}
+
+.icon-bg {
+    $ctx: &;
+    z-index: 1;
+    position: relative;
+    @extend .transition;
+    &_svg {
+        z-index: -1;
+        width: 60px; height: 60px;
+        @extend .absolute-centered;
+    }
+    &_content {
+        width: 100%;
+        height: 100%;
+        @extend .absolute-centered;
+    }
+    &:hover {
+        #{$ctx}_svg {
+            color: white;
+            transform: translate(-50%, -50%) rotate(-30deg);
+        }
+    }
+}
+
+.mt {
+    &-1 {
+        margin-top: 1em;
+    }
+    &-2 {
+        margin-top: 2em;
+    }
+}

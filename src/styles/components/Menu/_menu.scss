@@ -1,0 +1,154 @@
+.menu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: #30a7de;
+  border: 5px solid black;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s all;
+  transform: translate(-100%, 0px);
+
+  .menu_container {
+    max-width: 1500px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px auto;
+  }
+  .umd {
+    width: 40%;
+    position: absolute;
+    right: 15%;
+    bottom: 5%;
+    max-width: 600px;
+  }
+  .nubes {
+    img {
+      position: absolute;
+      width: 175px;
+
+      @media (min-width: 999px) {
+        width: 275px;
+      }
+    }
+
+    .nube1 {
+      left: -12%;
+      top: 5%;
+      transition: 120s all;
+
+      @media (min-width: 999px) {
+        top: 35%;
+        left: 32%;
+        width: 180px;
+      }
+    }
+
+    .nube2 {
+      width: 100px;
+      top: 14%;
+      left: 20%;
+      transition: 120s all;
+
+      @media (min-width: 999px) {
+        width: 150px;
+        top: 45%;
+        left: 40%;
+      }
+    }
+  }
+
+  .links {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+
+    a {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 800;
+      font-size: 18px;
+
+      @media (min-width: 999px) {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .redes {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      margin: 8px;
+
+      @media (min-width: 999px) {
+        width: 30px;
+        height: 30px;
+        margin: 0 15px;
+      }
+    }
+  }
+
+  .idiomas {
+    position: absolute;
+    top: 5%;
+    right: 20%;
+    font-family: "greycliffcf-bold";
+
+    p{
+      font-size: 25px;
+      cursor: pointer;
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+
+    cursor: pointer;
+    img {
+      width: 40px;
+    }
+  }
+
+  .varias_plantas {
+    position: absolute;
+    right: -2px;
+    bottom: -10%;
+    img {
+      width: 200px;
+    }
+
+    @media (min-width: 999px) {
+      bottom: 0%;
+
+      img {
+        width: 300px;
+        max-height: 400px;
+        object-fit: contain;
+        object-position: right;
+      }
+    }
+  }
+}
+
+.menu_active {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0%, 0px);
+
+  .nube1,
+  .nube2 {
+    transform: translate(235%, 0px);
+  }
+}

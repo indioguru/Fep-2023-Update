@@ -1,0 +1,203 @@
+.guia-viajero {
+  overflow: hidden;
+  &_banner {
+    background-color: #f179ae;
+    height: 65vh;
+    position: relative;
+    max-height: 450px;
+
+    @media (min-width: 999px) {
+      height: 100vh;
+      max-height: 700px;
+      min-height: 550px;
+    }
+
+    .containerAll {
+      height: 100%;
+    }
+
+    h2 {
+      position: absolute;
+      width: 55%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 20%;
+
+      @media (min-width: 999px) {
+        top: 40%;
+        font-size: 50px;
+        width: 40%;
+        right: initial;
+      }
+    }
+
+    .personajerosada {
+      position: absolute;
+      bottom: 0;
+      width: 50%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 1;
+
+      @media (min-width: 999px) {
+        max-width: 400px;
+        right: 0%;
+        left: initial;
+      }
+    }
+
+    .nube1 {
+      position: absolute;
+      width: 160px;
+      left: -19%;
+      top: 50%;
+
+      @media (min-width: 999px) {
+        left: 40%;
+        width: 200px;
+        top: 30%;
+      }
+    }
+
+    .nube2 {
+      width: 180px;
+      position: absolute;
+      bottom: 20%;
+      right: -25%;
+
+      @media (min-width: 999px) {
+        right: -100px;
+        bottom: 50%;
+        width: 250px;
+      }
+    }
+
+    .suelo {
+      background-color: #82c76f;
+      width: 100%;
+      height: 15%;
+      position: absolute;
+      bottom: 0;
+      border-top: 3px solid black;
+    }
+
+    .hojasverdes {
+      position: absolute;
+      left: 0;
+      bottom: 9%;
+      width: 30%;
+      z-index: 1;
+      height: 40%;
+      object-fit: contain;
+      object-position: left;
+      display: none;
+
+      @media (min-width: 999px) {
+        display: block;
+      }
+    }
+  }
+
+  &_vuelos,
+  &_hoteles,
+  &_camping {
+    position: relative;
+    border-top: 3px solid black;
+    padding: 80px 0;
+    h2 {
+      font-family: "greycliffcf-bold";
+      text-align: center;
+      padding-bottom: 30px;
+
+      @media (min-width: 999px) {
+        text-align: left;
+        font-size: 30px;
+      }
+    }
+
+    p {
+      padding-bottom: 25px;
+    }
+
+    .imagen_container {
+      border: 3px solid black;
+      height: 260px;
+
+      @media (min-width: 999px) {
+        height: 400px;
+      }
+
+      img {
+        height: 100%;
+        // object-fit: cover;
+      }
+    }
+
+    .botones {
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+      margin: 0px auto;
+      padding: 20px 0;
+
+      img {
+        width: 40px;
+        cursor: pointer;
+      }
+    }
+
+    @media (min-width: 999px) {
+      .containerAll {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .descripciones {
+          width: 45%;
+          padding-bottom: 100px;
+        }
+
+        .slider {
+          width: 45%;
+        }
+      }
+    }
+  }
+
+  &_vuelos {
+    .imagen_decoration {
+      position: absolute;
+      width: 125px;
+      top: 0;
+    }
+  }
+
+  &_hoteles {
+    background-color: #f59686;
+    .imagen_decoration {
+      position: absolute;
+      width: 125px;
+      top: -10%;
+      right: 0;
+      z-index: 5;
+    }
+    @media (min-width: 999px) {
+      .containerAll {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &_camping {
+    background-color: #82c76f;
+
+    .imagen_decoration {
+      position: absolute;
+      width: 125px;
+      top: -5%;
+      z-index: 5;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.entradas-section {
+  @media (min-width: 999px) {
+    .individuales {
+      display: block;
+
+      .entradas_container {
+        width: 100%;
+      }
+
+      .entradas_titulo {
+        margin-top: 50px;
+      }
+      .entradas_items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 900px;
+        margin: 0px auto;
+        .entrada_item {
+          width: 45%;
+        }
+      }
+    }
+  }
+}

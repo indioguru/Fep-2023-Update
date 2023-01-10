@@ -1,0 +1,71 @@
+&_banner {
+  background-color: #30a7de;
+  height: 325px;
+  position: relative;
+  max-width: 1600px;
+  margin: 0px auto;
+
+  @media (min-width: 999px) {
+    height: 80vh;
+    min-height: 500px;
+    max-height: 700px;
+  }
+
+  img {
+    position: absolute;
+  }
+
+  .montanaconsueloe {
+    bottom: 0;
+    width: 100%;
+  }
+
+  .flor_banner {
+    bottom: 0;
+    width: 45px;
+    left: 25%;
+
+    @media (min-width: 999px) {
+      width: 10%;
+      left: 15%;
+    }
+  }
+
+  .todos_banner {
+    width: 150px;
+    bottom: 2%;
+    right: 10%;
+
+    @media (min-width: 999px) {
+      width: 26%;
+      bottom: 1%;
+      right: 16%;
+    }
+  }
+
+  h1 {
+    font-family: "Block_Berthold_Regular";
+    position: absolute;
+    top: 45%;
+    left: 10%;
+
+    @media (min-width: 999px) {
+      top: 24%;
+      left: 12%;
+      font-size: 50px;
+    }
+  }
+
+  .logo {
+    width: 65%;
+    top: 5%;
+    right: 10%;
+    max-width: 500px;
+
+    @media (min-width: 999px) {
+      margin: 0px auto;
+      right: 0;
+      left: 0;
+    }
+  }
+}

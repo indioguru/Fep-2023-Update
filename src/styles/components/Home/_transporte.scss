@@ -1,0 +1,343 @@
+.transporte-section {
+  background-color: #6faadc;
+  padding-top: 10px;
+  position: relative;
+
+  .titulo {
+    padding-bottom: 80px;
+  }
+
+  .nube {
+    position: absolute;
+    width: 50%;
+  }
+
+  .nube1 {
+    left: -25%;
+    top: 3%;
+
+    @media (min-width: 999px) {
+      left: 10%;
+      top: 4%;
+      max-width: 250px;
+    }
+  }
+
+  .nube2 {
+    right: 5%;
+    top: 6%;
+    width: 120px;
+
+    @media (min-width: 999px) {
+      right: 7%;
+      top: 7%;
+      max-width: 200px;
+    }
+  }
+
+  &_containerAll {
+    @media (min-width: 999px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    .transporte_item {
+      width: 100%;
+      position: relative;
+      @media (min-width: 999px) {
+        width: 45%;
+      }
+
+      .mariposanegra2 {
+        width: 65px;
+        right: -6%;
+        position: absolute;
+        bottom: 0%;
+        top: 50%;
+        transform: rotateY(180deg) translate(0px, -50%);
+
+        @media (min-width: "999px") {
+          width: 75px;
+        }
+      }
+
+      .mini_title {
+        font-family: "greycliffcf-bold";
+        padding-top: 40px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+      }
+
+      .titulo_buses {
+        text-align: center;
+        font-family: "greycliffcf-bold";
+        text-transform: uppercase;
+        font-size: 20px;
+        padding-bottom: 5px;
+        position: relative;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        .negramariposa1 {
+          width: 65px;
+          left: 15%;
+          position: absolute;
+          bottom: 0;
+          transform: rotateY(180deg);
+        }
+      }
+
+      &_white {
+        background: #30a7de;
+        padding: 10px 20px;
+        padding-top: 0;
+        padding-bottom: 40px;
+        border: 2px solid black;
+        margin: 0px auto;
+
+        @media (min-width: 999px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 10px 50px;
+          padding-bottom: 40px;
+        }
+
+        .item {
+          display: flex;
+          align-items: center;
+          p {
+            width: 50%;
+            padding: 10px;
+            box-sizing: content-box;
+            @media (min-width: 999px) {
+              font-size: 20px !important;
+            }
+          }
+
+          .tipo {
+            border-right: 2px solid #54c6df;
+            border-bottom: 2px solid #54c6df;
+            padding-left: 0;
+            font-weight: 600;
+
+            span {
+              display: block;
+              text-align: left;
+              width: 95%;
+            }
+          }
+
+          .dia {
+            border-bottom: 2px solid #54c6df;
+          }
+
+          &:last-child {
+            p {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+
+    .transporte_item_elegido {
+      .transporte_item_white {
+        .item {
+          p {
+            width: 36%;
+            min-height: 35px;
+            font-size: 12px !important;
+
+            display: flex;
+            align-items: center;
+            padding: 0;
+            text-align: center;
+
+            @media (min-width: 999px) {
+              font-size: 15px !important;
+            }
+            &:first-child {
+              width: 25%;
+              font-family: "greycliffcf-bold";
+            }
+          }
+
+          .dia {
+            border-right: 2px solid #54c6df;
+            padding-left: 20px;
+            text-align: left;
+
+            &:last-child {
+              border-right: none;
+            }
+          }
+        }
+
+        .item_nombres {
+          p {
+            align-items: center;
+            min-height: 35px;
+            font-weight: 600;
+            font-size: 12px !important;
+
+            @media (min-width: 999px) {
+              font-size: 13px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .conductor_elegido {
+    margin-top: 70px;
+
+    @media (min-width: 999px) {
+      margin-top: 0;
+    }
+  }
+
+  .suelo {
+    height: 100px;
+    background-color: #39b44d;
+    border-top: 3px solid black;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .principalButtom {
+    transform: translate(0px, 18px);
+    margin-bottom: 30px;
+    width: 280px;
+    text-align: center;
+
+    @media (min-width: 999px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  #vuelos {
+    margin-bottom: 70px;
+
+    @media (min-width: 999px) {
+      margin-top: 20px;
+    }
+  }
+
+  .img_transporte {
+    width: calc(868px / 4);
+    height: 300px;
+    background: url("/assets/anim_steps/ellastransporte_movil.png");
+    z-index: 5;
+    position: relative;
+    transform: translate(75%, -20px);
+    animation: ella 1s steps(4) infinite;
+    padding-top: 115px;
+
+    @media (min-width: 999px) {
+      margin: 0px auto;
+      padding-top: 0px;
+      width: calc(1014px / 4);
+      height: 350px;
+      background: url("/assets/anim_steps/ellastransporte_desktop.png");
+      animation: ella_destock 1s steps(4) infinite;
+      @keyframes ella_destock {
+        0% {
+          background-position: 0;
+        }
+
+        100% {
+          background-position: 1014px;
+        }
+      }
+    }
+  }
+
+  @keyframes ella {
+    0% {
+      background-position: 0;
+    }
+
+    100% {
+      background-position: 868px;
+    }
+  }
+
+  .planta1 {
+    position: absolute;
+    bottom: -169px;
+    width: 115px;
+    z-index: 5;
+    left: -20px;
+
+    @media (min-width: 999px) {
+      bottom: 8%;
+      width: 200px;
+      left: 0;
+    }
+  }
+
+  .florencia {
+    width: 135px;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    left: 5%;
+
+    @media (min-width: 999px) {
+      left: 35%;
+    }
+  }
+
+  // Nubes
+  .nube_bottom1 {
+    bottom: 17%;
+    width: 125px;
+    left: -12%;
+  }
+
+  .nube_bottom2 {
+    bottom: 15%;
+    width: 140px;
+    left: 5%;
+
+    @media (min-width: "999px") {
+      bottom: 22%;
+      width: 180px;
+      left: 22%;
+    }
+  }
+
+  .nube_bottom3 {
+    bottom: 18%;
+    width: 110px;
+    right: 0%;
+
+    @media (min-width: "999px") {
+      bottom: 27%;
+      width: 175px;
+    }
+  }
+
+  // miniplantas
+
+  .miniplantas {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    z-index: 5;
+  }
+
+  .miniplantas1 {
+    bottom: 3%;
+    left: 20%;
+  }
+  .miniplantas2 {
+    bottom: 1%;
+    right: 20%;
+  }
+}

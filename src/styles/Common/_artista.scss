@@ -1,0 +1,44 @@
+.artista-common {
+  position: relative;
+  width: 330px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+
+  .marco {
+    position: relative;
+  }
+
+  .artista_img {
+    position: absolute;
+    top: 6%;
+    height: 61%;
+    object-fit: cover;
+    width: 90%;
+    margin: 0px auto;
+    left: 0;
+    right: 0;
+  }
+
+  .info {
+    width: 65%;
+    position: absolute;
+    top: 70%;
+    width: 60%;
+    left: 6%;
+
+    .nombre {
+      font-family: "greycliffcf-bold";
+      text-transform: uppercase;
+      font-size: 18px;
+      padding-bottom: 25px;
+    }
+  }
+  .spotify_link {
+    img {
+      width: 30px;
+      bottom: 5%;
+      position: absolute;
+      left: 6%;
+    }
+  }
+}

@@ -1,0 +1,204 @@
+.conductorElegido {
+  background-color: #f4792e;
+  border-top: 2px black solid;
+  position: relative;
+  padding-bottom: 50px;
+  &_container {
+    .title {
+      padding-top: 50px;
+      text-align: center;
+      font-size: 20px;
+      font-family: greycliffcf-bold;
+      width: 50%;
+      margin: 0 auto;
+
+      @media (min-width: 768px) {
+        font-size: 40px;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 50px;
+      }
+    }
+
+    .grids {
+      position: relative;
+      @media (min-width: 999px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .transporte_item {
+        width: 100%;
+        position: relative;
+        @media (min-width: 999px) {
+          width: 45%;
+        }
+
+        .mariposanegra2 {
+          width: 65px;
+          right: -6%;
+          position: absolute;
+          bottom: 0%;
+          top: 50%;
+          transform: rotateY(180deg) translate(0px, -50%);
+
+          @media (min-width: "999px") {
+            width: 75px;
+          }
+        }
+
+        .mini_title {
+          font-family: "greycliffcf-bold";
+          padding-top: 40px;
+          padding-bottom: 10px;
+          text-transform: uppercase;
+        }
+
+        .titulo_buses {
+          text-align: center;
+          font-family: "greycliffcf-bold";
+          text-transform: uppercase;
+          font-size: 20px;
+          padding-bottom: 5px;
+          position: relative;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+
+          .negramariposa1 {
+            width: 65px;
+            right: 15%;
+            position: absolute;
+            bottom: 0;
+            transform: rotateY(180deg);
+          }
+        }
+
+        &_white {
+          background: #f59686;
+          padding: 10px 20px;
+          padding-top: 0;
+          padding-bottom: 40px;
+          border: 2px solid black;
+          margin: 0px auto;
+
+          @media (min-width: 999px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px 50px;
+            padding-bottom: 40px;
+          }
+
+          .item {
+            display: flex;
+            align-items: center;
+            p {
+              width: 50%;
+              padding: 10px;
+              box-sizing: content-box;
+              @media (min-width: 999px) {
+                font-size: 20px !important;
+              }
+            }
+
+            .tipo {
+              border-right: 2px solid #eee5d4;
+              border-bottom: 2px solid #eee5d4;
+              padding-left: 0;
+              font-weight: 600;
+
+              span {
+                display: block;
+                text-align: left;
+                width: 95%;
+              }
+            }
+
+            .dia {
+              border-bottom: 2px solid #eee5d4;
+            }
+
+            &:last-child {
+              p {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+
+      .transporte_item_elegido {
+        .transporte_item_white {
+          .item {
+            p {
+              width: 36%;
+              min-height: 35px;
+              font-size: 12px !important;
+
+              display: flex;
+              align-items: center;
+              padding: 0;
+              text-align: center;
+
+              @media (min-width: 999px) {
+                font-size: 15px !important;
+              }
+              &:first-child {
+                width: 25%;
+                font-family: "greycliffcf-bold";
+              }
+            }
+
+            .dia {
+              border-right: 2px solid #eee5d4;
+              padding-left: 20px;
+              text-align: left;
+
+              &:last-child {
+                border-right: none;
+              }
+            }
+          }
+
+          .item_nombres {
+            p {
+              align-items: center;
+              min-height: 35px;
+              font-weight: 600;
+              font-size: 12px !important;
+
+              @media (min-width: 999px) {
+                font-size: 13px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .principalButtom {
+      margin-top: 50px;
+      max-width: 400px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .planta {
+      width: 140px;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      @media (min-width: 768px) {
+        width: 200px;
+      }
+
+      @media (min-width: 1200px) {
+        width: 250px;
+      }
+    }
+  }
+}

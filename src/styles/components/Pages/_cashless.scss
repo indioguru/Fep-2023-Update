@@ -1,0 +1,126 @@
+.cashless {
+  &_banner {
+    background-color: #f59686;
+    height: 60vh;
+    position: relative;
+    max-height: 400px;
+
+    @media (min-width: 999px) {
+      height: 100%;
+      max-height: initial;
+    }
+
+    h2 {
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    .info {
+      padding-top: 10px;
+    }
+
+    .botones {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      margin-top: 30px;
+    }
+
+    .principalButtom {
+      margin: initial;
+      width: 200px;
+      text-align: center;
+      font-size: 12px;
+      margin-bottom: 10px;
+      padding: 5px 20px;
+    }
+
+    .suelo {
+      background-color: #a76c66;
+      width: 100%;
+      height: 15%;
+      position: absolute;
+      bottom: 0;
+      border-top: 3px solid black;
+      border-bottom: 3px solid black;
+    }
+
+    .personajecashless {
+      position: absolute;
+      z-index: 1;
+      width: 30%;
+      bottom: 0%;
+    }
+  }
+
+  &_preguntas {
+    background-color: #eee5d4;
+    padding: 50px 0;
+  }
+
+  //   VERSIÓN WEB
+
+  @media (min-width: 999px) {
+    .version_web {
+      position: relative;
+      height: 80vh;
+      min-height: 550px;
+      max-height: 800px;
+
+      .background_left,
+      .background_right {
+        position: absolute;
+        height: 80vh;
+        min-height: 550px;
+        max-height: 800px;
+        width: 50%;
+      }
+
+      .background_left {
+        background-color: #f59686;
+      }
+      .background_right {
+        background-color: #eee5d4;
+        right: 0;
+      }
+
+      .containerAll {
+        display: flex;
+
+        .cashless_banner,
+        .cashless_preguntas {
+          background-color: transparent;
+          padding: 0px 30px;
+          width: 50%;
+          padding-top: 120px;
+          height: auto;
+          max-height: 75vh;
+          overflow: auto;
+          overflow-x: hidden;
+
+          h2 {
+            padding-top: 0;
+          }
+        }
+      }
+      .suelo {
+        background-color: #a76c66;
+        width: 50%;
+        height: 15%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+      }
+
+      .personajecashless {
+        position: absolute;
+        z-index: 1;
+        width: 30%;
+        bottom: 0%;
+        max-width: 180px;
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+.memoriasPage {
+  &_container {
+    .all_banner {
+      background-color: #dde21f;
+      z-index: -1;
+      position: relative;
+
+      .content_info {
+        text-align: center;
+        h1 {
+          font-size: 25px;
+          font-family: Block_Berthold_Regular;
+          margin-bottom: 10px;
+          width: 60%;
+          margin: 0 auto;
+          @media (min-width: 999px) {
+            font-size: 60px;
+            margin-bottom: 0px;
+            margin-top: 20px;
+            width: 100%;
+          }
+
+          @media (min-width: 768px) and (max-width: 999px) {
+            font-size: 35px;
+            width: 100%;
+          }
+        }
+
+        p {
+          font-size: 13px;
+          font-family: greycliffcf-bold;
+          margin: 0 auto;
+          @media (min-width: 999px) {
+            text-align: start;
+            font-size: 22px;
+            transform: translate(0%, 200%);
+          }
+
+          @media (min-width: 768px) and (max-width: 999px) {
+            font-size: 18px;
+            width: 60%;
+          }
+        }
+      }
+
+      .content_banner {
+        position: relative;
+        margin-top: 50px;
+        .sol {
+          position: absolute;
+          width: 10%;
+          top: 0;
+          right: 10%;
+          @media (min-width: 768px) {
+            width: 5%;
+          }
+        }
+
+        .arbusto {
+          position: absolute;
+          width: 50%;
+          bottom: 0;
+          right: 0;
+          @media (min-width: 768px) {
+            width: 25%;
+          }
+        }
+
+        .suelo {
+          height: 25%;
+          width: 100%;
+          border-top: 3px black solid;
+          border-bottom: 3px black solid;
+          background-color: #714a48;
+          position: absolute;
+          bottom: 0;
+          z-index: -1;
+          @media (min-width: 999px) {
+            height: 35%;
+          }
+        }
+
+        .corazon {
+          width: 40%;
+          margin-right: 40%;
+          padding-bottom: 20px;
+
+          @media (min-width: 999px) {
+            width: 20%;
+            transform: translate(280%, 0px);
+          }
+
+          @media (min-width: 1200px) {
+            transform: translate(250%, 10px);
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .background_setcion_two {
+      background-color: #a76c66;
+      .content_cards {
+        padding-top: 1px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1300px;
+        margin: 0 auto;
+        .card {
+          background-color: #ece5d4;
+          border: 2px black solid;
+          margin: 40px 20px;
+          max-width: 350px;
+          height: 310px;
+          img {
+            padding: 10px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+          }
+
+          h1 {
+            padding: 0px 10px;
+            font-size: 15px;
+            font-family: greycliffcf-regular;
+            @media (min-width: 768px) {
+              font-size: 25px;
+              font-weight: bold;
+            }
+          }
+
+          p {
+            padding: 10px;
+            font-size: 12px;
+            max-height: 76px;
+            overflow: auto;
+            font-family: greycliffcf-regular;
+            @media (min-width: 768px) {
+              font-size: 15px;
+              max-height: 100px;
+            }
+          }
+
+          @media (min-width: 768px) {
+            margin: 20px 20px;
+            max-width: 393px;
+            height: 370px;
+          }
+        }
+
+        @media (min-width: 768px) {
+          padding-top: 50px;
+        }
+      }
+    }
+  }
+}

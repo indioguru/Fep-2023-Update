@@ -1,0 +1,161 @@
+.sponsors {
+  &_container {
+    .content_info {
+      text-align: center;
+
+      h1 {
+        font-size: 25px;
+        font-family: Block_Berthold_Regular;
+        @media (min-width: 999px) {
+          font-size: 50px;
+        }
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 12px;
+        font-family: greycliffcf-bold;
+
+        @media (min-width: 999px) {
+          font-size: 20px;
+          width: 45%;
+          text-align: start;
+        }
+      }
+    }
+
+    .content_banner {
+      position: relative;
+      height: 200px;
+      .montana {
+        position: relative;
+        top: 10%;
+        width: 150%;
+        z-index: -1;
+        max-width: 1600px;
+        margin: 0 auto;
+
+        @media (min-width: 500px) {
+          top: 8%;
+          width: 100%;
+        }
+
+        @media (min-width: 768px) {
+          top: 40%;
+        }
+
+        @media (min-width: 999px) {
+          top: 20%;
+        }
+
+        @media (min-width: 1200px) {
+          top: 10%;
+          width: 100%;
+        }
+      }
+
+      .flor {
+        width: 80px;
+        max-width: 150px;
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        @media (min-width: 768px) {
+          width: 10%;
+          left: 40%;
+        }
+      }
+
+      .hulk {
+        position: absolute;
+        width: 180px;
+        right: 0;
+        bottom: 0;
+
+        @media (min-width: 768px) {
+          width: 30%;
+          right: 15%;
+        }
+      }
+
+      .suelo {
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        bottom: 0;
+        z-index: -2;
+        background-color: #1e9c4f;
+        border: 2px black solid;
+
+        @media (min-width: 768px) {
+          height: 30%;
+        }
+
+        @media (min-width: 999px) {
+          height: 40%;
+        }
+
+        @media (min-width: 999px) {
+          height: 38%;
+        }
+      }
+
+      @media (min-width: 768px) {
+        height: 400px;
+      }
+    }
+
+    .content_cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      .card {
+        background-color: #1f429a;
+        margin: 40px 20px;
+        max-width: 320px;
+        height: 300px;
+        border: 3px white solid;
+
+        img {
+          margin: 0 auto;
+          width: 150px;
+          padding: 30px 0px 20px 20px;
+        }
+
+        p {
+          color: white;
+          font-family: greycliffcf-regular;
+          margin: 10px 20px;
+          font-size: 12px;
+          max-height: 75px;
+          min-height: 75px;
+          overflow: auto;
+
+          @media (min-width: 999px) {
+            font-size: 15px;
+            max-height: 105px;
+            min-height: 105px;
+          }
+        }
+
+        a {
+          color: white;
+          padding: 20px 20px 0px 20px;
+          font-size: 18px;
+          font-family: greycliffcf-bold;
+          text-decoration: underline;
+          @media (min-width: 999px) {
+            font-size: 20px;
+          }
+        }
+
+        @media (min-width: 999px) {
+          max-width: 350px;
+          height: 350px;
+        }
+      }
+    }
+  }
+}

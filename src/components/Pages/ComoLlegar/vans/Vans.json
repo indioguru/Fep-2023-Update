@@ -1,0 +1,23 @@
+[
+  {
+    "tipo": "IDA",
+    "tipo_ingles": "ONE WAY TO",
+    "precio": "$ 63.000 COP",
+    "full_precio": "$ 75.000 COP",
+    "combo_3_dias": true
+  },
+  {
+    "tipo": "REGRESO",
+    "tipo_ingles": "ONE WAY FROM",
+    "precio": "$ 88.000 COP",
+    "full_precio": "$ 105.000 COP",
+    "combo_3_dias": true
+  },
+  {
+    "tipo": "ROUND TRIP",
+    "tipo_ingles": "ROUND TRIP",
+    "precio": "$ 113.000 COP",
+    "full_precio": "$ 135.000 COP",
+    "combo_3_dias": true
+  }
+]

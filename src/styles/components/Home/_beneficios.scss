@@ -1,0 +1,84 @@
+.beneficios {
+  padding-bottom: 100px;
+
+  .principalButtom {
+    width: 100%;
+    text-align: center;
+    @media (min-width: "999px") {
+      width: fit-content;
+      margin-top: 50px;
+    }
+  }
+  .titulo_principal {
+    font-family: "greycliffcf-bold";
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+  .beneficiosDesktop {
+    display: flex;
+    justify-content: space-between;
+
+    .beneficio {
+      width: 24%;
+
+      &:nth-child(1) {
+        .beneficio_titulo,
+        .number {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .beneficiosMovil {
+    width: 85%;
+    margin: 0px auto;
+    .botones {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0px auto;
+      max-width: 200px;
+      padding-top: 20px;
+      padding-bottom: 40px;
+
+      img {
+        width: 40px;
+      }
+    }
+
+    .beneficio_slide_1 {
+      .beneficio_titulo,
+      .number {
+        color: white;
+      }
+    }
+  }
+
+  .beneficio {
+    position: relative;
+
+    .beneficio_titulo {
+      position: absolute;
+      bottom: 4%;
+      width: 80%;
+      margin: 0px auto;
+      text-align: center;
+      left: 0;
+      right: 0;
+      font-weight: 800;
+    }
+
+    .number {
+      position: absolute;
+      top: 2%;
+      left: 0;
+      right: 0;
+      margin: 0px auto;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 800;
+    }
+  }
+}

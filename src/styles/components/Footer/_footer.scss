@@ -1,0 +1,48 @@
+.footer {
+  background-color: #2f77bd;
+
+  img {
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &_bottom {
+    padding: 30px 0;
+    .containerAll {
+      color: white;
+      text-align: center;
+
+      @media (min-width: 999px) {
+        display: flex;
+        justify-content: space-between;
+      }
+      a {
+        color: white;
+        text-decoration: underline;
+      }
+
+      p,
+      a {
+        padding-bottom: 10px;
+        display: block;
+      }
+    }
+  }
+
+  .redes {
+    display: flex;
+    justify-content: end;
+    padding: 20px 0px;
+
+    @media (min-width: 999px) {
+ 
+    }
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      padding: 10px;
+    }
+  }
+}

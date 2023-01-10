@@ -1,0 +1,210 @@
+.vip {
+  overflow: hidden;
+
+  &_banner {
+    position: relative;
+    background-color: #807ab9;
+    width: 100vw;
+    height: 60vh;
+
+    @media (min-width: 999px) {
+      height: 100vh;
+      min-height: 600px;
+      max-height: 700px;
+    }
+
+    h2 {
+      text-align: center;
+      padding-top: 145px;
+      font-size: 40px;
+    }
+
+    .info{
+        width: 40%;
+        padding-top: 15px;
+    
+    }
+
+    .principalButtom{
+        margin: initial;
+        margin-top: 20px;
+    }
+
+    .containerAll {
+      height: 100%;
+    }
+
+    img {
+      position: absolute;
+      width: 150px;
+    }
+
+    .arbusto {
+      bottom: 19%;
+      z-index: 1;
+      width: 60%;
+
+      @media (min-width: 999px) {
+        max-width: 250px;
+        left: 0;
+        bottom: 16%;
+      }
+    }
+
+    .personajevip {
+      width: 40%;
+      bottom: 10%;
+      z-index: 1;
+      right: 0;
+      max-width: 350px;
+
+      @media (min-width: 999px) {
+        height: 70%;
+        object-fit: contain;
+      }
+    }
+
+    .umd {
+      bottom: 19%;
+      z-index: 2;
+      width: 60%;
+
+      @media (min-width: 999px) {
+        bottom: 19%;
+        max-width: 350px;
+        right: 25%;
+      }
+    }
+
+    .suelo {
+      height: 25%;
+      background-color: #1ea15d;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      border-top: 3px solid black;
+      border-bottom: 3px solid black;
+
+      @media (min-width: 999px) {
+        height: 25%;
+      }
+    }
+  }
+
+  &_beneficio,
+  &_galeria_final {
+    position: relative;
+    border-bottom: 3px solid black;
+    padding: 80px 0;
+    .imagen_decoration {
+      position: absolute;
+      width: 100px;
+      top: -10%;
+    }
+
+    h2 {
+      font-family: "greycliffcf-bold";
+      text-align: center;
+      padding-bottom: 30px;
+
+      @media (min-width: 999px) {
+        text-align: left;
+        font-size: 30px;
+      }
+    }
+
+    .imagen_container {
+      border: 3px solid black;
+      height: 260px;
+
+      @media (min-width: 999px) {
+        height: 300px;
+      }
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .botones {
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+      margin: 0px auto;
+      padding: 20px 0;
+      max-width: 400px;
+
+      img {
+        width: 40px;
+        cursor: pointer;
+      }
+    }
+
+    @media (min-width: 999px) {
+      .containerAll {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .descripciones {
+          width: 45%;
+          padding-bottom: 100px;
+        }
+
+        .slider {
+          width: 45%;
+        }
+      }
+    }
+  }
+
+  &_beneficio:nth-child(2) {
+    background-color: #f179ae;
+    .imagen_decoration {
+      top: 0;
+    }
+  }
+
+  &_beneficio:nth-child(3) {
+    background-color: #2f77bd;
+  }
+
+  &_beneficio:nth-child(4) {
+    background-color: #82c76f;
+  }
+
+  &_beneficio:nth-child(5) {
+    background-color: #f59686;
+  }
+
+  &_beneficio:nth-child(6) {
+    background-color: #f7b8d1;
+  }
+
+  &_beneficio:nth-child(odd) {
+    .containerAll {
+      flex-direction: row-reverse;
+    }
+
+    .imagen_decoration {
+      right: 0;
+    }
+  }
+
+  &_entradas{
+    background-color: #f086b5;
+
+    .entradas_combo{
+      position: relative;
+    }
+  }
+
+  &_galeria_final {
+    max-width: 1600px;
+    margin: 0px auto;
+    .imagen_container {
+      border: none;
+    }
+  }
+}

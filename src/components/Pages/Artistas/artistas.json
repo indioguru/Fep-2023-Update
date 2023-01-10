@@ -1,0 +1,68 @@
+[
+    {
+        "_id": "1",
+        "nombre": "Billie Eilish",
+        "imagen": "/assets/etapa5/artistas/billie.png",
+        "fecha": "Jueves 23 de marzo del 2023",
+        "hora": "2 a 4 PM",
+        "escenario": "Aval",
+        "spotify": "asasasasasa",
+        "instagram": "asasasasasa",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores."
+    },
+    {
+        "_id": "2",
+        "nombre": "Cigarettes After Sex",
+        "imagen": "/assets/etapa5/artistas/cigarretes.jpg",
+        "fecha": "Viernes 24 de marzo del 2023",
+        "hora": "2 a 4 PM",
+        "escenario": "Aval",
+        "spotify": "asasasasasa",
+        "instagram": "asasasasasa",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores."
+    },
+    {
+        "_id": "3",
+        "nombre": "Blink-182",
+        "imagen": "/assets/etapa5/artistas/blink-182.jpg",
+        "fecha": "Sábado 25 de marzo del 2023",
+        "hora": "2 a 4 PM",
+        "escenario": "Aval",
+        "spotify": "",
+        "instagram": "",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores."
+    },
+    {
+        "_id": "4",
+        "nombre": "The 1975",
+        "imagen": "/assets/etapa5/artistas/billie.png",
+        "fecha": "Jueves 23 de marzo del 2023",
+        "hora": "2 a 4 PM",
+        "escenario": "Aval",
+        "spotify": "asasasasasa",
+        "instagram": "asasasasasa",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores."
+    },
+    {
+        "_id": "5",
+        "nombre": "Drake",
+        "imagen": "/assets/etapa5/artistas/cigarretes.jpg",
+        "fecha": "Viernes 24 de marzo del 2023",
+        "hora": "2 a 4 PM",
+        "escenario": "Aval",
+        "spotify": "asasasasasa",
+        "instagram": "asasasasasa",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores."
+    },
+    {
+        "_id": "6",
+        "nombre": "Rosalía",
+        "imagen": "/assets/etapa5/artistas/blink-182.jpg",
+        "fecha": "Sábado 25 de marzo del 2023",
+        "hora": "2 a 4 PM",
+        "escenario": "Aval",
+        "spotify": "",
+        "instagram": "",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores."
+    }
+]
