@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 export const Artistas = ({ idioma }) => {
   const [artistasAll, setArtistasAll] = useState([]);
+  const [artistasSort, setArtistasSort] = useState([]);
   const [artistas, setartistas] = useState([]);
   const [loader, setLoader] = useState(true);
 
@@ -27,6 +28,11 @@ export const Artistas = ({ idioma }) => {
         body.style.overflowY = "scroll";
       }, 500);
     }
+  }, [artistas]);
+
+  useEffect(() => {
+   const artistasSort = artistas.sort((a, b) => a.orden - b.orden);
+   setArtistasSort(artistasSort)
   }, [artistas]);
 
   const filtrar = (item) => {
@@ -83,7 +89,7 @@ export const Artistas = ({ idioma }) => {
           <FiltroArtistas idioma={idioma} filtrar={filtrar} />
         </div>
         <div className="page-artistas_artistas artistasContainerAnimation">
-          {artistas.map((artista) => (
+          {artistasSort.map((artista) => (
             <Artista marco="/assets/anim_steps/5.png" artista={artista} />
           ))}
         </div>

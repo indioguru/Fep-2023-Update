@@ -1,12 +1,18 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import memories from "./Memorias.json";
 export const Memorias = ({ idioma }) => {
   const [cardMemories, setCardMemories] = useState([]);
 
   useEffect(() => {
     setCardMemories(memories);
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      let body = document.querySelector("body");
+      body.style.overflowY = "hidden";
+      body.style.overflowY = "scroll";
+    }, 500);
   }, []);
 
   return (
@@ -39,6 +45,7 @@ export const Memorias = ({ idioma }) => {
 
           <div className="content_banner">
             <div className="containerAll">
+              <div className="suelo"></div>
               <img
                 className="sol "
                 src="/assets/etapa5/solnaranja.png"
@@ -56,7 +63,6 @@ export const Memorias = ({ idioma }) => {
               src="/assets/etapa5/arbustoslado.png"
               alt="arbusto"
             />
-            <div className="suelo"></div>
           </div>
         </div>
 

@@ -1,7 +1,19 @@
 .prensa {
+  .content_info {
+    overflow: auto;
+    width: 90%;
+    margin: 0px auto;
+    height: 90%;
+    // margin-top: 90px;
+  }
   &_container {
     .flex_item_one {
       background-color: #f59686;
+      position: relative;
+      height: 50vh;
+      @media (min-width: 600px) {
+        height: 100vh;
+      }
     }
     .logo {
       display: flex;
@@ -29,8 +41,10 @@
     }
 
     .content_banner {
-      position: relative;
+      position: absolute;
       bottom: 0;
+      width: 100%;
+
       .sol {
         position: absolute;
         width: 10%;
@@ -67,15 +81,29 @@
 
     .flex_item_two {
       background-color: #eee5d4;
+      height: 50vh;
+      @media (min-width: 600px) {
+        height: 100vh;
+      }
     }
     .content_info {
-      p {
-        padding: 25px;
+
+      @media (min-width: 999px){
+       margin-top: 100px;
+       height: 80%;
+      }
+      li {
+        p {
+          padding: 0;
+        }
+      }
+      p,
+      ul {
+        padding: 15px;
         font-size: 12px;
         font-family: greycliffcf-bold;
 
         @media (min-width: 999px) {
-          margin-top: 10%;
           padding-right: 15%;
           padding-left: 5%;
           font-size: 20px;
@@ -97,7 +125,6 @@
       .flex_item_one {
         flex: 1 1 50%;
         border-right: 2px black solid;
-        align-self: flex-end;
       }
 
       .flex_item_two {

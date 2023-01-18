@@ -9,6 +9,14 @@ export const Sponsors = () => {
     setInfoSponsors(sponsors);
   }, []);
 
+  useEffect(() => {
+    setTimeout(() => {
+      let body = document.querySelector("body");
+      body.style.overflowY = "hidden";
+      body.style.overflowY = "scroll";
+    }, 500);
+  }, []);
+
   return (
     <div className="sponsors">
       <div className="sponsors_container">
@@ -25,6 +33,7 @@ export const Sponsors = () => {
         </div>
 
         <div className="content_banner">
+          <div className="suelo"></div>
           <img
             className="montana"
             src="/assets/etapa4/montanas_rosadas.png"
@@ -38,8 +47,6 @@ export const Sponsors = () => {
           />
 
           <img className="hulk" src="/assets/etapa5/sponsors.png" alt="señor" />
-
-          <div className="suelo"></div>
         </div>
 
         <div className="content_cards">

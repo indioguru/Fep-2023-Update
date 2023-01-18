@@ -11,6 +11,8 @@ export const GuiaViajero = () => {
     getViajero().then((data) => setViajero(data.data));
   }, []);
 
+
+
   return (
     <div className="guia-viajero">
       <div className="guia-viajero_banner">

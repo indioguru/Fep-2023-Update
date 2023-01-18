@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Mapa from "./mapa/Mapa";
 import Buses from "./buses/Buses";
 import Vans from "./vans/Vans";
@@ -6,6 +6,14 @@ import ConductorElegido from "./conductorElegido/ConductorElegido";
 import Media from "react-media";
 
 export const ComoLlegar = ({ idioma }) => {
+
+  useEffect(() => {
+    setTimeout(() => {
+      let body = document.querySelector("body");
+      body.style.overflowY = "hidden";
+      body.style.overflowY = "scroll";
+    }, 500);
+  }, []);
   return (
     <div className="comoLlegar">
       <div className="comoLlegar_container">

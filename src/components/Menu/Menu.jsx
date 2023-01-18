@@ -71,6 +71,15 @@ export const Menu = ({ setIdioma, toggleMenu, idioma }) => {
             onClick={() => {
               toggleMenu();
             }}
+            to="/prensa"
+          >
+            {idioma === "ESP" ? <>Prensa</> : <>News</>}
+          </Link>
+
+          {/* <Link
+            onClick={() => {
+              toggleMenu();
+            }}
             to="/memorias"
           >
             {idioma === "ESP" ? (
@@ -80,14 +89,7 @@ export const Menu = ({ setIdioma, toggleMenu, idioma }) => {
             )}
           </Link>
 
-          <Link
-            onClick={() => {
-              toggleMenu();
-            }}
-            to="/prensa"
-          >
-            {idioma === "ESP" ? <>Prensa</> : <>News</>}
-          </Link>
+       
 
           <Link
             onClick={() => {
@@ -105,7 +107,7 @@ export const Menu = ({ setIdioma, toggleMenu, idioma }) => {
             to="/sponsors"
           >
             {idioma === "ESP" ? <>Sponsors</> : <>Sponsors</>}
-          </Link>
+          </Link> */}
         </div>
 
         {window.innerWidth > 999 && (

@@ -2,7 +2,6 @@
   &_container {
     .all_banner {
       background-color: #dde21f;
-      z-index: -1;
       position: relative;
 
       .content_info {
@@ -74,7 +73,7 @@
           background-color: #714a48;
           position: absolute;
           bottom: 0;
-          z-index: -1;
+          left: 0;
           @media (min-width: 999px) {
             height: 35%;
           }

@@ -5,7 +5,7 @@ import { Loader } from "../../../Common/Loader";
 import artistasJSON from "../artistas.json";
 import { ArtistaPageMore } from "./ArtistaPageMore";
 
-export const ArtistaPage = ({idioma}) => {
+export const ArtistaPage = ({ idioma }) => {
   const { slug } = useParams();
   const [artistasAll, setArtistasAll] = useState([]);
   const [artista, setArtista] = useState({});
@@ -20,14 +20,21 @@ export const ArtistaPage = ({idioma}) => {
   useEffect(() => {
     const name = slug.split("-").join(" ").toLowerCase();
 
-    const artista = artistasAll.filter((el) =>
-      el.nombre
+    const artista = artistasAll.filter((artist) =>
+      artist.nombre
         .toLowerCase()
         .split("-")
         .join(" ")
         .toLowerCase()
         .includes(name.toLowerCase())
     );
+
+    if (artista.length > 1) {
+      const finalArtist = artista.filter(
+        (artista) => artista.nombre.length === name.length
+      );
+      return setArtista(finalArtist[0]);
+    }
 
     if (artista[0] !== undefined) {
       setArtista(artista[0]);
@@ -65,7 +72,6 @@ export const ArtistaPage = ({idioma}) => {
           <div className="info-banner">
             <div className="fechas">
               <p>
-                
                 <strong>DÍA:</strong> {artista.fecha}
               </p>
               {artista.hora && (
