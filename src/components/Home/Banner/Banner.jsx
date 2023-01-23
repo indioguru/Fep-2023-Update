@@ -8,13 +8,13 @@ export const Banner = () => {
         {window.innerWidth > 999 ? (
           <img
             className="logo_banner"
-            src="/assets/etapa4/jd_desktop.png"
+            src="/assets/etapa4/logodesktop.png"
             alt="logo"
           />
         ) : (
           <img
             className="logo_banner"
-            src="/assets/etapa4/jd_movil.png"
+            src="/assets/etapa4/logomovil.png"
             alt="logo"
           />
         )}
