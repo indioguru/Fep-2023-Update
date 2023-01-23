@@ -1,8 +1,7 @@
-import React, { useRef } from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import sponsors from "./Sponsors.json";
 import { scrollElement } from "../../helpers/ScrollAnimations";
+
 export const Sponsors = () => {
   const [infoSponsors, setInfoSponsors] = useState([]);
   // const containerRef = useRef(null);
@@ -86,7 +85,7 @@ export const Sponsors = () => {
 
         <div className="content_cards">
           {infoSponsors.map((item, i) => (
-            <div key={i} className="card">
+            <div key={i} className={`card card_${i + 1}`}>
               <img className="imgPrueba" src={item.logo} alt="logo" />
               <p>{item.info}</p>
               <a target="_blank" href={item.link}>
