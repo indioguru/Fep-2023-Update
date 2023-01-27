@@ -16,7 +16,6 @@ export const scrollElement = (itemsClass, classAnimation) => {
   const heightTotal = window.innerHeight;
   let items = document.querySelectorAll(`.${itemsClass}`);
 
-  console.log(items)
   if (items.length >= 2) {
     for (let i = 0; items.length > i; i++) {
       middleScreen(`${itemsClass}_${i + 1}`, classAnimation, heightTotal);

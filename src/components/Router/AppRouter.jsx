@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { Notification } from "../Common/Notification";
 import { Footer } from "../Footer/Footer";
 import { Home } from "../Home/Home";
 import { Menu } from "../Menu/Menu";
@@ -46,6 +47,7 @@ export const AppRouter = () => {
 
   return (
     <Router>
+      <Notification />
       <div className="hamburguesa" onClick={toggleMenu}>
         <img src="/assets/etapa5/menu/hamburguesa.png" alt="hamburguesa" />
       </div>
