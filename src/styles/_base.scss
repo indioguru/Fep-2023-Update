@@ -460,11 +460,19 @@ hr {
   padding: 20px;
   padding-left: 50px;
   transition: 2s all;
-  transform: translate(0vw, 0);
-  animation: notification 2s forwards 10s;
+  transform: translate(100vw, 0);
+  animation: notification 10s forwards 2s;
 
   @keyframes notification {
     0% {
+      transform: translate(100vw, 0);
+    }
+
+    25% {
+      transform: translate(0vw, 0);
+    }
+
+    75% {
       transform: translate(0vw, 0);
     }
 
@@ -529,7 +537,15 @@ hr {
 }
 
 .hideNotification {
-  transform: translate(100vw, 0);
-  opacity: 0;
-  visibility: hidden;
+  animation: Hidenotification 2s forwards;
+
+  @keyframes Hidenotification {
+    0% {
+      transform: translate(0vw, 0);
+    }
+
+    100% {
+      transform: translate(100vw, 0);
+    }
+  }
 }

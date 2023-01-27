@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 
 // import Media from "react-media";
 export const Prensa = () => {
+  const lang = localStorage.getItem("idioma");
   const { data, isLoading } = useFetch("/pagina-de-prensa");
 
   return (
@@ -19,7 +20,7 @@ export const Prensa = () => {
             </div>
 
             <div className="title">
-              <h1>Prensa</h1>
+              <h1>{lang === "ING" ? <>News</> : <>Prensa</>}</h1>
             </div>
 
             <div className="content_banner">
@@ -34,28 +35,24 @@ export const Prensa = () => {
           </div>
 
           <div className="flex_item_two">
-            <ReactMarkdown
-              rehypePlugins={[rehypeRaw]}
-              remarkPlugins={[remarkGfm]}
-              className="content_info"
-            >
-              {data.prensa_INFO}
-            </ReactMarkdown>
-          </div>
-
-          {/* <Media query="(max-width: 760px)">
-          {(resolution) => {
-            return resolution ? (
-              <div className="logo">
-                <img src="/assets/etapa4/logomovil.png" alt="logo" />
-              </div>
+            {lang === "ING" ? (
+              <ReactMarkdown
+                rehypePlugins={[rehypeRaw]}
+                remarkPlugins={[remarkGfm]}
+                className="content_info"
+              >
+                {data.prensa_INFO_INGLES}
+              </ReactMarkdown>
             ) : (
-              <div className="logo">
-                <img src="/assets/etapa4/logomovil.png" alt="logo" />
-              </div>
-            );
-          }}
-        </Media> */}
+              <ReactMarkdown
+                rehypePlugins={[rehypeRaw]}
+                remarkPlugins={[remarkGfm]}
+                className="content_info"
+              >
+                {data.prensa_INFO}
+              </ReactMarkdown>
+            )}
+          </div>
         </div>
       )}
     </div>
