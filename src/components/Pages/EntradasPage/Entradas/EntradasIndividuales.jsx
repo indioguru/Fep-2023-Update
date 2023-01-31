@@ -48,9 +48,9 @@ export const EntradasIndividuales = ({ idioma }) => {
           <div className="entradas_items">
             <div className="entrada_item">
               {idioma === "ESP" ? (
-                <p className="mini_title">JUEVES 24 DE MARZO 2023</p>
+                <p className="mini_title">JUEVES 23 DE MARZO 2023</p>
               ) : (
-                <p className="mini_title">THURSDAY, MARCH 24, 2023</p>
+                <p className="mini_title">THURSDAY, MARCH 23, 2023</p>
               )}
 
               {general.map((entrada, i) => {
@@ -72,9 +72,9 @@ export const EntradasIndividuales = ({ idioma }) => {
 
             <div className="entrada_item">
               {idioma === "ESP" ? (
-                <p className="mini_title">VIERNES 25 DE MARZO 2023</p>
+                <p className="mini_title">VIERNES 24 DE MARZO 2023</p>
               ) : (
-                <p className="mini_title">FRIDAY, MARCH 25, 2023</p>
+                <p className="mini_title">FRIDAY, MARCH 24, 2023</p>
               )}
 
               {general.map((entrada, i) => {
@@ -96,9 +96,9 @@ export const EntradasIndividuales = ({ idioma }) => {
 
             <div className="entrada_item">
               {idioma === "ESP" ? (
-                <p className="mini_title">SÁBADO 26 DE MARZO 2023</p>
+                <p className="mini_title">SÁBADO 25 DE MARZO 2023</p>
               ) : (
-                <p className="mini_title">SATURDAY, MARCH 26, 2023</p>
+                <p className="mini_title">SATURDAY, MARCH 25, 2023</p>
               )}
 
               {general.map((entrada, i) => {
@@ -158,9 +158,9 @@ export const EntradasIndividuales = ({ idioma }) => {
 
             <div className="entrada_item">
               {idioma === "ESP" ? (
-                <p className="mini_title">JUEVES 24 DE MARZO 2023</p>
+                <p className="mini_title">JUEVES 23 DE MARZO 2023</p>
               ) : (
-                <p className="mini_title">THURSDAY, MARCH 24, 2023</p>
+                <p className="mini_title">THURSDAY, MARCH 23, 2023</p>
               )}
               {vip.map((entrada, i) => {
                 return (
@@ -180,9 +180,9 @@ export const EntradasIndividuales = ({ idioma }) => {
 
             <div className="entrada_item">
               {idioma === "ESP" ? (
-                <p className="mini_title">VIERNES 25 DE MARZO 2023</p>
+                <p className="mini_title">VIERNES 24 DE MARZO 2023</p>
               ) : (
-                <p className="mini_title">FRIDAY, MARCH 25, 2023</p>
+                <p className="mini_title">FRIDAY, MARCH 24, 2023</p>
               )}
 
               {vip.map((entrada, i) => {
@@ -203,9 +203,9 @@ export const EntradasIndividuales = ({ idioma }) => {
 
             <div className="entrada_item">
               {idioma === "ESP" ? (
-                <p className="mini_title">SÁBADO 26 DE MARZO 2023</p>
+                <p className="mini_title">SÁBADO 25 DE MARZO 2023</p>
               ) : (
-                <p className="mini_title">SATURDAY, MARCH 26, 2023</p>
+                <p className="mini_title">SATURDAY, MARCH 25, 2023</p>
               )}
 
               {vip.map((entrada, i) => {

@@ -73,7 +73,7 @@ export const Menu = ({ setIdioma, toggleMenu, idioma }) => {
             }}
             to="/prensa"
           >
-            {idioma === "ESP" ? <>Prensa</> : <>News</>}
+            {idioma === "ESP" ? <>Prensa</> : <>Press and Media</>}
           </Link>
 
           {/* <Link
@@ -98,6 +98,7 @@ export const Menu = ({ setIdioma, toggleMenu, idioma }) => {
             {idioma === "ESP" ? <>Como llegar</> : <>How to arrive</>}
           </Link>
 
+          */}
           <Link
             onClick={() => {
               toggleMenu();
@@ -105,7 +106,7 @@ export const Menu = ({ setIdioma, toggleMenu, idioma }) => {
             to="/sponsors"
           >
             {idioma === "ESP" ? <>Sponsors</> : <>Sponsors</>}
-          </Link> */}
+          </Link>
         </div>
 
         {window.innerWidth > 999 && (
