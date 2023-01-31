@@ -96,9 +96,9 @@ export const Menu = ({ setIdioma, toggleMenu, idioma }) => {
             to="/como-llegar"
           >
             {idioma === "ESP" ? <>Como llegar</> : <>How to arrive</>}
-          </Link>
+          </Link> */}
 
-          */}
+        
           <Link
             onClick={() => {
               toggleMenu();
@@ -151,10 +151,7 @@ export const Menu = ({ setIdioma, toggleMenu, idioma }) => {
 
       {/* PLANTAS */}
       <div className="varias_plantas">
-        <img
-          src="/assets/etapa5/menu/varias_plantas.png"
-          alt="varias_plantas"
-        />
+        <img src="/assets/etapa5/menu/varias_plantas.png" alt="varias_plantas" />
       </div>
     </div>
   );

@@ -30,7 +30,9 @@ export const Sponsors = () => {
           <div className="content_cards">
             {p_sponsors.sponsors.map((item, i) => (
               <div key={i} className={`card card_${i + 1}`}>
-                <img className="imgPrueba" src={item.logo.url} alt="logo" />
+                <div className="content_logo">
+                  <img className="imgPrueba" src={item.logo.url} alt="logo" />
+                </div>
                 <p>{item.info}</p>
                 <a target="_blank" href={item.url_VER_MAS}>
                   VER MÁS

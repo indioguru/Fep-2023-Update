@@ -58,14 +58,7 @@ export const Artistas = ({ idioma, artistas }) => {
   console.log(number);
 
   const changeBackgroundColor = () => {
-    const colors = [
-      "#743696",
-      "#f4792e",
-      "#2f77bd",
-      "#0f6338",
-      "#714a48",
-      "#ca5448",
-    ];
+    const colors = ["#743696", "#714a48", "#2f77bd", "#0f6338", "#f4792e", "#ca5448"];
 
     const selectColor = document.querySelector(".home-artistas");
     selectColor.style.background = colors[number - 1];
@@ -84,7 +77,7 @@ export const Artistas = ({ idioma, artistas }) => {
           {artistas.map((artista, i) => (
             <div key={i} className="mySlides fade">
               <Artista
-                marco={`/assets/etapa5/marcos/${i + 1}.png`}
+                marco={`/assets/etapa5/marcos/marco_${i + 1}.png`}
                 artista={artista}
               />
             </div>
@@ -156,16 +149,10 @@ export const Artistas = ({ idioma, artistas }) => {
             ))}
             <div className="flechas">
               <div className="prev">
-                <img
-                  src="/assets/iconos/flechablanca1.png"
-                  alt="flechablanca"
-                />
+                <img src="/assets/iconos/flechablanca1.png" alt="flechablanca" />
               </div>
               <div className="next">
-                <img
-                  src="/assets/iconos/flechablanca2.png"
-                  alt="flechablanca"
-                />
+                <img src="/assets/iconos/flechablanca2.png" alt="flechablanca" />
               </div>
             </div>
           </div>

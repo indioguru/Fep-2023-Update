@@ -111,7 +111,7 @@
       max-width: 1200px;
       margin: 0 auto;
       .card {
-        background-color: #1f429a;
+        background-color: #eee5d4;
         margin: 40px 20px;
         max-width: 320px;
         height: 300px;
@@ -119,15 +119,24 @@
         transition: scale, 0.5s ease;
         opacity: 0;
         transform: translate(0px, 100px);
-        img {
-          margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        .content_logo {
           width: 150px;
-          padding: 30px 0px 20px 20px;
-          transition: scale, 0.5s ease;
+          height: 150px;
+          align-self: center;
+
+          img {
+            margin: 0 auto;
+            width: 150px;
+            padding-top: 30px;
+            transition: scale, 0.5s ease;
+          }
         }
 
         p {
-          color: white;
+          color: black;
           font-family: greycliffcf-regular;
           margin: 10px 20px;
           font-size: 12px;
@@ -143,12 +152,11 @@
         }
 
         a {
-          color: white;
           padding: 20px 20px 0px 20px;
           font-size: 18px;
           font-family: greycliffcf-bold;
           text-decoration: underline;
-          color: #9ec8eb;
+          color: #5f3c6d;
           @media (min-width: 999px) {
             font-size: 20px;
           }
@@ -168,7 +176,7 @@
 
       @media (hover: hover) {
         .card:hover {
-          background-color: #5f3c6d;
+          background-color: #f7b8d1;
           transform: scale(1.1);
           transition: scale, 0.5s ease;
           img {
@@ -178,7 +186,7 @@
 
           a {
             cursor: pointer;
-            color: #f7b8d1;
+            // color: #f7b8d1;
           }
         }
       }
