@@ -1,6 +1,6 @@
 import React from "react";
 
-export const SponsorsBanner = ({sponsors_INFO, isLoading}) => {
+export const SponsorsBanner = ({ sponsors_INFO, isLoading }) => {
   return (
     <div className="sponsors_banner">
       <div className="logo">
@@ -21,13 +21,11 @@ export const SponsorsBanner = ({sponsors_INFO, isLoading}) => {
           alt="Montaña"
         />
 
-        <img
-          className="flor"
-          src="/assets/etapa4/inicio/flor1.png"
-          alt="flor"
-        />
+        <div className="containerAll">
+          <img className="flor" src="/assets/etapa4/inicio/flor1.png" alt="flor" />
 
-        <img className="hulk" src="/assets/etapa5/sponsors.png" alt="señor" />
+          <img className="hulk" src="/assets/etapa5/sponsors.png" alt="señor" />
+        </div>
       </div>
     </div>
   );

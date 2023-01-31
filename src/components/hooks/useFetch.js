@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export const useFetch = (url, item = null) => {
   const finalUrl = `https://fep2023.herokuapp.com${url}`;
-  
+
   const [state, setState] = useState({
     data: item,
     isLoading: true,

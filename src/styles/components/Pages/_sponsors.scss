@@ -30,18 +30,18 @@
 
       .montana {
         position: relative;
-        top: 10%;
-        width: 150%;
+        top: 50px;
+        width: 100%;
         max-width: 1600px;
         margin: 0 auto;
 
         @media (min-width: 500px) {
-          top: 8%;
+          top: 30px;
           width: 100%;
         }
 
         @media (min-width: 768px) {
-          top: 170px;
+          top: 178px;
         }
 
         @media (min-width: 999px) {
@@ -49,8 +49,7 @@
         }
 
         @media (min-width: 1200px) {
-          top: 15%;
-          width: 100%;
+          top: 20%;
         }
       }
 
@@ -73,8 +72,12 @@
         bottom: 0;
 
         @media (min-width: 768px) {
-          width: 30%;
+          width: 250px;
           right: 15%;
+        }
+
+        @media (min-width: 1200px) {
+          width: 360px;
         }
       }
 
