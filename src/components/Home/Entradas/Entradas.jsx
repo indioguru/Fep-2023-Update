@@ -29,6 +29,8 @@ export const Entradas = ({ idioma }) => {
     setGeneral(general);
   }, [entradasCombos]);
 
+  console.log(vip);
+
   // useEffect(() => {
   //   const vip = entradas.filter((item) => {
   //     return item.tipo === "vip";
@@ -78,7 +80,11 @@ export const Entradas = ({ idioma }) => {
                         {idioma === "ESP" ? <> ETAPA</> : <>STAGE </>}{" "}
                         {entrada.etapa}
                       </p>
-                      <p className="precio">{entrada.precio} </p>
+                      {entrada.agotado ? (
+                        <p className="agotado">AGOTADO</p>
+                      ) : (
+                        <p className="precio">{entrada.precio} </p>
+                      )}
                     </div>
                   )
                 );
@@ -99,7 +105,11 @@ export const Entradas = ({ idioma }) => {
                         {idioma === "ESP" ? <> ETAPA</> : <>STAGE </>}
                         {entrada.etapa}
                       </p>
-                      <p className="precio">{entrada.precio} </p>
+                      {entrada.agotado ? (
+                        <p className="agotado">AGOTADO</p>
+                      ) : (
+                        <p className="precio">{entrada.precio} </p>
+                      )}
                     </div>
                   )
                 );
@@ -131,14 +141,17 @@ export const Entradas = ({ idioma }) => {
                   entrada.combo_3_dias && (
                     <div key={i} className="entrada">
                       <p className="etapa">
-                        {" "}
                         {idioma === "ESP" ? (
                           <> ETAPA ÚNICA</>
                         ) : (
                           <> SINGLE STAGE </>
                         )}
                       </p>
-                      <p className="precio">{entrada.precio} </p>
+                      {entrada.agotado ? (
+                        <p className="agotado">AGOTADO</p>
+                      ) : (
+                        <p className="precio">{entrada.precio} </p>
+                      )}
                     </div>
                   )
                 );
@@ -163,7 +176,11 @@ export const Entradas = ({ idioma }) => {
                           <> SINGLE STAGE </>
                         )}
                       </p>
-                      <p className="precio">{entrada.precio} </p>
+                      {entrada.agotado ? (
+                        <p className="agotado">AGOTADO</p>
+                      ) : (
+                        <p className="precio">{entrada.precio} </p>
+                      )}
                     </div>
                   )
                 );

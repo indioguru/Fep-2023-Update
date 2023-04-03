@@ -1,4 +1,7 @@
 import React from "react";
+import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
+import ReactMarkdown from "react-markdown";
 
 export const Accordion = ({ type, items }) => {
   const openItem = (itemsToClose, itemSelected) => {
@@ -39,10 +42,17 @@ export const Accordion = ({ type, items }) => {
                   }
                   className="accordion-item-title"
                 >
-     
                   {item.pregunta}
                 </div>
-                <div className="accordion-item-body">{item.respuesta}</div>
+                <div className="accordion-item-body">
+                  <ReactMarkdown
+                    rehypePlugins={[rehypeRaw]}
+                    remarkPlugins={[remarkGfm]}
+                    className="content_info"
+                  >
+                    {item.respuesta}
+                  </ReactMarkdown>
+                </div>
               </div>
             ))}
           </>

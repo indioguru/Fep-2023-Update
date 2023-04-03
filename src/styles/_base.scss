@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden !important;
-  background-color: #6faadc;
-  width: 100vw;
-}
-
 .home {
   overflow: hidden;
 }
@@ -127,7 +121,9 @@ $breakpoint-mobile: 425px;
 
 body {
   font-family: "greycliffcf-regular", "Helvetica";
-  overflow-y: hidden;
+  overflow-x: hidden !important;
+  background-color: #6faadc;
+  width: 100vw;
 }
 
 .scrollX {
@@ -166,7 +162,7 @@ h2 {
 .containerAll {
   width: 90%;
   margin: 0px auto;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 
 .principalButtom {
@@ -194,6 +190,11 @@ h2 {
   @media (min-width: 999px) {
     font-size: 20px;
   }
+}
+
+.tertiary_boton{
+  font-family: "greycliffcf-bold";
+  text-decoration: underline;
 }
 
 .boton_entradaMovil {
@@ -238,7 +239,7 @@ h2 {
   transition: 0.5s all;
   opacity: 0;
   visibility: hidden;
-
+  width: fit-content;
   @media (max-width: "999px") {
     bottom: 15%;
     top: initial;
@@ -247,8 +248,6 @@ h2 {
   @media (min-width: "999px") {
     justify-content: space-between;
     flex-direction: row;
-    // width: 600px;
-    width: 400px;
     opacity: 1;
     visibility: visible;
   }
@@ -461,18 +460,26 @@ hr {
   padding-left: 50px;
   transition: 2s all;
   transform: translate(100vw, 0);
-  animation: notification 10s forwards 2s;
+  animation: notification 15s forwards 2s;
+
+  strong {
+    font-family: "Block_Berthold_Regular";
+    -webkit-text-stroke: 0.8px black;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
 
   @keyframes notification {
     0% {
       transform: translate(100vw, 0);
     }
 
-    25% {
+    20% {
       transform: translate(0vw, 0);
     }
 
-    75% {
+    80% {
       transform: translate(0vw, 0);
     }
 
@@ -500,7 +507,6 @@ hr {
     top: 5%;
     -webkit-text-stroke: 1px black; /* width and color */
     cursor: pointer;
-
     font-size: 20px;
   }
 
@@ -549,3 +555,17 @@ hr {
     }
   }
 }
+p.agotado {
+  width: 80%;
+  text-align: center;
+  background: #f59686;
+  margin: 5px;
+  border: 1px solid black;
+  padding: 5px 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+

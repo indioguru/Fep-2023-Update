@@ -1,0 +1,16 @@
+[
+    {
+        "dia": "1",
+        "escenario": "1",
+        "artista": "nombre de prueba de artista",
+        "hora_inicio": "1:00",
+        "hora_final": "3:00"
+    },
+    {
+        "dia": "1",
+        "escenario": "1",
+        "artista": "nombre de prueba de artista",
+        "hora_inicio": "14:00",
+        "hora_final": "16:30"
+    }
+]

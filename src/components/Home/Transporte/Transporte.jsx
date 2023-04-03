@@ -1,4 +1,3 @@
-import React from "react";
 import transporte from "./transporte.json";
 
 export const Transporte = ({ idioma }) => {

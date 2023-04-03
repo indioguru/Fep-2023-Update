@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { urlGenerator } from "../helpers/urlsGenerator";
 
@@ -6,10 +5,10 @@ export const Artista = ({ artista, marco }) => {
   return (
     <div className="artista-common ">
       <Link to={`/artistas/${urlGenerator(artista)}`}>
-        {artista.imagen.formats.medium ? (
+        {artista.imagen.formats.small ? (
           <img
             className="artista_img"
-            src={artista.imagen.formats.medium.url}
+            src={artista.imagen.formats.small.url}
             alt="artista"
             loading="lazy"
           />

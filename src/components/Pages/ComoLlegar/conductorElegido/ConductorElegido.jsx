@@ -111,7 +111,7 @@ const ConductorElegido = ({ idioma }) => {
         </div>
 
         <a
-          className="principalButtom ga4-call_to_action-comprar_transporte-home"
+          className="principalButtom ga4-call_to_action-como_llegar-comprar-conductor"
           target="_blank"
           href="https://www.entradasamarillas.com/event/festival-estreo-picnic-2023"
         >

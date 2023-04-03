@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getVip } from "../../api/api";
 import { Beneficio } from "./Beneficios/Beneficio";
 import { Entradas } from "./Entradas/Entradas";
@@ -26,7 +26,9 @@ export const Vip = () => {
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             et ea rebum. Stet clita kasd gubergren, no sea takimata.
-            <a className="principalButtom" href="">COMPRAR ENTRADAS</a>
+            <a className="principalButtom" href="">
+              COMPRAR ENTRADAS
+            </a>
           </p>
 
           <img

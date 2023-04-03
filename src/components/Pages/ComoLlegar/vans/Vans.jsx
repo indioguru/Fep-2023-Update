@@ -102,7 +102,7 @@ const Vans = ({ idioma }) => {
         </div>
 
         <a
-          className="principalButtom ga4-call_to_action-comprar_transporte-home"
+          className="principalButtom ga4-call_to_action-como_llegar-comprar-vans"
           target="_blank"
           href="https://www.entradasamarillas.com/event/festival-estreo-picnic-2023"
         >

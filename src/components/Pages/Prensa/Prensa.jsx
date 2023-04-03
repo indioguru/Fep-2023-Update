@@ -20,7 +20,7 @@ export const Prensa = () => {
             </div>
 
             <div className="title">
-              <h1>{lang === "ING" ? <>Press and Media</> : <>Prensa</>}</h1>
+              <h1>{lang === "ING" ? <>Blink182 <br /> postponement</> : <>Aplazamiento <br /> Blink182</>}</h1>
             </div>
 
             <div className="content_banner">

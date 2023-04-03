@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Loader = () => {
   const idioma = localStorage.getItem("idioma");
   return (

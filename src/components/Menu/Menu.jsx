@@ -1,7 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import { toggleMenu } from "../helpers/menu";
 
-export const Menu = ({ setIdioma, toggleMenu, idioma }) => {
+export const Menu = ({ setIdioma, idioma }) => {
   const changeLanguaje = (languaje) => {
     setIdioma(languaje);
     localStorage.setItem("idioma", languaje);
@@ -17,6 +17,7 @@ export const Menu = ({ setIdioma, toggleMenu, idioma }) => {
         <div className="idiomas">
           {idioma === "ESP" ? (
             <p
+              className="ga4-call_to_action-multilenguaje-menu"
               onClick={() => {
                 changeLanguaje("ING");
                 toggleMenu();
@@ -26,6 +27,7 @@ export const Menu = ({ setIdioma, toggleMenu, idioma }) => {
             </p>
           ) : (
             <p
+              className="ga4-call_to_action-multilenguaje-menu"
               onClick={() => {
                 changeLanguaje("ESP");
                 toggleMenu();
@@ -71,22 +73,40 @@ export const Menu = ({ setIdioma, toggleMenu, idioma }) => {
             onClick={() => {
               toggleMenu();
             }}
-            to="/prensa"
+            to="/aplazamientoblink"
           >
-            {idioma === "ESP" ? <>Prensa</> : <>Press and Media</>}
+            {idioma === "ESP" ? (
+              <>Aplazamiento Blink182</>
+            ) : (
+              <>Blink182 postponement</>
+            )}
           </Link>
 
-          {/* <Link
+          <Link
+            onClick={() => {
+              toggleMenu();
+            }}
+            to="/cashless"
+          >
+            {idioma === "ESP" ? <>Cashless</> : <>Cashless</>}
+          </Link>
+
+          <Link
             onClick={() => {
               toggleMenu();
             }}
             to="/memorias"
           >
-            {idioma === "ESP" ? (
-              <>Memorias del pasado</>
-            ) : (
-              <>Memories of the past </>
-            )}
+            {idioma === "ESP" ? <>Memorias del pasado</> : <>Past Memories </>}
+          </Link>
+
+          <Link
+            onClick={() => {
+              toggleMenu();
+            }}
+            to="/horarios"
+          >
+            {idioma === "ESP" ? <>Horarios</> : <>Timetable </>}
           </Link>
 
           <Link
@@ -95,10 +115,18 @@ export const Menu = ({ setIdioma, toggleMenu, idioma }) => {
             }}
             to="/como-llegar"
           >
-            {idioma === "ESP" ? <>Como llegar</> : <>How to arrive</>}
-          </Link> */}
+            {idioma === "ESP" ? <>Cómo llegar</> : <>How to arrive</>}
+          </Link>
 
-        
+          <Link
+            onClick={() => {
+              toggleMenu();
+            }}
+            to="/sostenibilidad"
+          >
+            {idioma === "ESP" ? <>Sostenibilidad</> : <>Sostenibilidad</>}
+          </Link>
+
           <Link
             onClick={() => {
               toggleMenu();
@@ -143,15 +171,15 @@ export const Menu = ({ setIdioma, toggleMenu, idioma }) => {
           >
             <img src="/assets/etapa5/menu/nspotify.png" alt="red social" />
           </a>
-          <a target="_blank" className="ga4-call_to_action-rrss-menu" href="">
-            <img src="/assets/etapa5/menu/ntiktok.png" alt="red social" />
-          </a>
         </div>
       </div>
 
       {/* PLANTAS */}
       <div className="varias_plantas">
-        <img src="/assets/etapa5/menu/varias_plantas.png" alt="varias_plantas" />
+        <img
+          src="/assets/etapa5/menu/varias_plantas.png"
+          alt="varias_plantas"
+        />
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-import React from "react";
 import filtro from "./filtro.json";
 
 export const FiltroArtistas = ({ idioma, filtrar }) => {
@@ -14,7 +13,7 @@ export const FiltroArtistas = ({ idioma, filtrar }) => {
   };
 
   return (
-    <>
+    <div className="page-artistas_filtro">
       {filtro.map((item, i) => (
         <div
           className={
@@ -31,13 +30,16 @@ export const FiltroArtistas = ({ idioma, filtrar }) => {
             }}
             className="filtro-artista"
           >
-            <p className="dia">  {idioma === "ESP" ? <> {item.dia}</> : <> {item.day}</>}</p>
+            <p className="dia">
+              {" "}
+              {idioma === "ESP" ? <> {item.dia}</> : <> {item.day}</>}
+            </p>
             <p className="fecha">
               {idioma === "ESP" ? <> {item.fecha}</> : <> {item.date}</>}
             </p>
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 };

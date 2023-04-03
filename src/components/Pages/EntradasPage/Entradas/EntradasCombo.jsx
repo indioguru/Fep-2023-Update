@@ -60,7 +60,11 @@ export const EntradasCombo = ({ idioma }) => {
                         <p className="etapa">STAGE {entrada.etapa}</p>
                       )}
 
-                      <p className="precio">{entrada.precio} </p>
+                      {entrada.agotado ? (
+                        <p className="agotado">AGOTADO</p>
+                      ) : (
+                        <p className="precio">{entrada.precio} </p>
+                      )}
                     </div>
                   )
                 );
@@ -81,7 +85,11 @@ export const EntradasCombo = ({ idioma }) => {
                       ) : (
                         <p className="etapa">STAGE {entrada.etapa}</p>
                       )}
-                      <p className="precio">{entrada.precio} </p>
+                      {entrada.agotado ? (
+                        <p className="agotado">AGOTADO</p>
+                      ) : (
+                        <p className="precio">{entrada.precio} </p>
+                      )}
                     </div>
                   )
                 );
@@ -114,7 +122,11 @@ export const EntradasCombo = ({ idioma }) => {
                       ) : (
                         <p className="etapa">SINGLE STAGE {entrada.etapa}</p>
                       )}
-                      <p className="precio">{entrada.precio} </p>
+                      {entrada.agotado ? (
+                        <p className="agotado">AGOTADO</p>
+                      ) : (
+                        <p className="precio">{entrada.precio} </p>
+                      )}
                     </div>
                   )
                 );
@@ -134,7 +146,11 @@ export const EntradasCombo = ({ idioma }) => {
                       ) : (
                         <p className="etapa">SINGLE STAGE {entrada.etapa}</p>
                       )}
-                      <p className="precio">{entrada.precio} </p>
+                      {entrada.agotado ? (
+                        <p className="agotado">AGOTADO</p>
+                      ) : (
+                        <p className="precio">{entrada.precio} </p>
+                      )}
                     </div>
                   )
                 );
@@ -156,7 +172,7 @@ export const EntradasCombo = ({ idioma }) => {
         )}
 
         <a
-          className="principalButtom ga4-call_to_action-entradas-seccion_home"
+          className="principalButtom ga4-call_to_action-entradas-entradas"
           target="_blank"
           href="https://www.entradasamarillas.com/event/festival-estreo-picnic-2023"
         >

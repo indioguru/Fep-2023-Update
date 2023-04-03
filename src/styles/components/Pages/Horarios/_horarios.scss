@@ -1,0 +1,316 @@
+$height_hora: 80px;
+
+.horarios_page {
+  padding-top: 100px;
+  overflow: hidden;
+
+  h2 {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  &_filtro {
+    padding-bottom: 50px;
+    .filtros {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 0px auto;
+      .filtro_item {
+        width: fit-content;
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: "greycliffcf-bold";
+        font-size: 15px;
+        border-radius: 10px;
+        padding: 10px 25px;
+        line-height: 16px;
+        transition: 0.5s all;
+        cursor: pointer;
+        &:hover {
+          border: 1px solid black;
+          background-color: #f179ae;
+        }
+
+        span {
+          display: block;
+          font-size: 22px;
+          font-family: Block_Berthold_Regular;
+          -webkit-text-stroke: 0.8px black;
+          color: white;
+        }
+      }
+      .filtro_item_active {
+        border: 1px solid black;
+        background-color: #f179ae;
+      }
+    }
+  }
+
+  .horario_container {
+    max-width: 1417px;
+    margin: 0px auto;
+    margin-bottom: 100px;
+  }
+
+  &_calendar {
+    overflow: hidden;
+    overflow-x: auto;
+    position: relative;
+    background-color: #30a7de;
+    margin: 0 5%;
+
+    .letrero_scroll {
+      position: absolute;
+      top: 5%;
+      width: 90%;
+      left: 0;
+      right: 0;
+      margin: 0px auto;
+      z-index: 5;
+      border: 3px solid black;
+      display: block;
+      transition: 0.5s all;
+      max-width: 300px;
+      .close {
+        width: 15px;
+        cursor: pointer;
+        top: 7%;
+        right: 5%;
+        position: absolute;
+      }
+    }
+
+    .backgrounBlack {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      background: rgba(0, 0, 0, 0.503);
+      left: 0;
+      z-index: 1;
+      transition: 0.5s all;
+    }
+
+    .hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .days {
+      width: 100%;
+      border: 3px solid black;
+      width: fit-content;
+      padding: 20px 40px;
+
+      .title_day {
+        text-align: center;
+        height: 100px;
+        h3 {
+          font-size: 20px;
+          position: absolute;
+          left: 5%;
+          right: 0;
+          top: 2.5%;
+          strong {
+            text-transform: uppercase;
+            display: block;
+            font-family: "greycliffcf-bold";
+            font-size: 30px;
+          }
+
+          @media (min-width: 999px) {
+            font-size: 25px;
+
+            strong {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+
+      .flex {
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+          height: $height_hora;
+          border-bottom: 2px solid $white;
+          padding: 10px;
+          img {
+            object-fit: contain;
+            height: 100%;
+          }
+        }
+
+        .horas {
+          width: 100px;
+          border-right: 2px solid $white;
+          font-family: "Block_Berthold_Regular";
+
+          .hora:last-child {
+            border-bottom: 0 !important;
+            background-color: transparent !important;
+          }
+        }
+
+        .hora {
+          height: $height_hora;
+          border-bottom: 2px solid $white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .hora:last-child {
+          border-bottom: 0 !important;
+          // background-color: black;
+        }
+
+        .escenario {
+          width: 250px;
+          border-right: 2px solid $white;
+          position: relative;
+          .artista {
+            position: absolute;
+            background: #eee5d4;
+            width: 100%;
+            padding: 5px;
+            border: 3px solid black;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 40px;
+            strong {
+              font-size: 15px;
+            }
+
+            p {
+              font-family: "greycliffcf-bold";
+              font-size: 10px;
+            }
+
+            .info {
+              position: absolute;
+              width: 20px;
+              bottom: 5%;
+              right: 5%;
+              cursor: pointer;
+            }
+
+            .artista_modal {
+              background: #eee5d4;
+              width: 130%;
+              position: absolute;
+              top: 5%;
+              left: 5%;
+              z-index: 5;
+              border: 3px solid black;
+              text-align: left;
+              overflow: hidden;
+              padding: 0;
+              padding: 15px 10px;
+              padding-bottom: 40px;
+              transition: 0.5s all;
+              visibility: hidden;
+              opacity: 0;
+
+              .flex {
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+                margin-top: 10px;
+              }
+
+              .info_text {
+                width: 50%;
+
+                strong {
+                  text-transform: uppercase;
+                  font-size: 14px;
+                  font-family: "greycliffcf-bold";
+                }
+
+                .hora_modal {
+                  font-size: 13px;
+                  display: block;
+                }
+
+                p {
+                  font-size: 11px;
+                }
+              }
+
+              img {
+                width: 20px;
+                position: absolute;
+                bottom: 7%;
+                right: 5%;
+              }
+              .artista_img {
+                width: 40%;
+                right: initial;
+                position: relative;
+                margin-top: 10px;
+                height: 90px;
+                object-fit: contain;
+              }
+
+              .close {
+                width: 15px;
+                cursor: pointer;
+                top: 7%;
+              }
+
+              .boton {
+                font-family: "greycliffcf-bold";
+                text-decoration: underline;
+                text-transform: uppercase;
+                margin-top: 5px;
+                display: block;
+                font-size: 14px;
+                position: absolute;
+                bottom: 7%;
+              }
+            }
+
+            .artista_modal_active {
+              visibility: visible;
+              opacity: 1;
+              animation: banne_animation 0.7s forwards;
+              @keyframes banne_animation {
+                0% {
+                  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+                }
+                100% {
+                  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+                  transform: translate(0, 0%);
+                }
+              }
+            }
+          }
+
+          .artista:nth-child(even) {
+            background-color: #f59686;
+
+            .artista_modal {
+              background-color: #f59686;
+            }
+          }
+        }
+
+        .escenario:last-child {
+          border-right: 0;
+
+          .title {
+            img {
+              filter: invert(1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

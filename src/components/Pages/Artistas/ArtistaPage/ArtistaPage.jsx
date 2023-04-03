@@ -1,45 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getArtistas } from "../../../api/api";
 import { Loader } from "../../../Common/Loader";
-import artistasJSON from "../artistas.json";
+import { useFetch, useFindByName } from "../../../hooks";
 import { ArtistaPageMore } from "./ArtistaPageMore";
 
 export const ArtistaPage = ({ idioma }) => {
   const { slug } = useParams();
-  const [artistasAll, setArtistasAll] = useState([]);
-  const [artista, setArtista] = useState({});
-  const [loader, setLoader] = useState(true);
 
-  useEffect(() => {
-    getArtistas().then((data) => {
-      setArtistasAll(data.data);
-    });
-  }, []);
-
-  useEffect(() => {
-    const name = slug.split("-").join(" ").toLowerCase();
-
-    const artista = artistasAll.filter((artist) =>
-      artist.nombre
-        .toLowerCase()
-        .split("-")
-        .join(" ")
-        .toLowerCase()
-        .includes(name.toLowerCase())
-    );
-
-    if (artista.length > 1) {
-      const finalArtist = artista.filter(
-        (artista) => artista.nombre.length === name.length
-      );
-      return setArtista(finalArtist[0]);
-    }
-
-    if (artista[0] !== undefined) {
-      setArtista(artista[0]);
-    }
-  }, [slug, artistasAll]);
+  const { data: artistasAll, isLoading } = useFetch("/artistas", []);
+  const { state: artista } = useFindByName(slug, artistasAll);
 
   useEffect(() => {
     if (Object.keys(artista).length > 0) {
@@ -47,21 +16,9 @@ export const ArtistaPage = ({ idioma }) => {
     }
   }, [artista]);
 
-  useEffect(() => {
-    let body = document.querySelector("body");
-    body.style.overflowY = "hidden";
-
-    if (Object.keys(artista).length > 0) {
-      setTimeout(() => {
-        setLoader(false);
-        body.style.overflowY = "scroll";
-      }, 500);
-    }
-  }, [artista]);
-
   return (
     <div className="artista-page">
-      {loader && <Loader />}
+      {isLoading && <Loader />}
 
       <div className="banner-desktop">
         <div className="artista-page_banner">
@@ -72,7 +29,13 @@ export const ArtistaPage = ({ idioma }) => {
           <div className="info-banner">
             <div className="fechas">
               <p>
-                <strong>DÍA:</strong> {artista.fecha}
+                <strong>DÍA:</strong>
+
+                {idioma === "ESP" ? (
+                  <> {artista.fecha}</>
+                ) : (
+                  <> {artista.fecha_INGLES}</>
+                )}
               </p>
               {artista.hora && (
                 <p>
@@ -118,7 +81,12 @@ export const ArtistaPage = ({ idioma }) => {
             <>
               <div className="fechas">
                 <p>
-                  <strong>DÍA:</strong> {artista.fecha}
+                  <strong>DÍA:</strong>{" "}
+                  {idioma === "ESP" ? (
+                    <> {artista.fecha}</>
+                  ) : (
+                    <> {artista.fecha_INGLES}</>
+                  )}
                 </p>
                 {artista.hora && (
                   <p>
@@ -157,7 +125,13 @@ export const ArtistaPage = ({ idioma }) => {
             </>
           )}
 
-          <div className="info">{artista.descripcion}</div>
+          <div className="info">
+            {idioma === "ESP" ? (
+              <>{artista.descripcion}</>
+            ) : (
+              <>{artista.descripcion_INGLES}</>
+            )}
+          </div>
         </div>
         <div className="artista-page_seeMore">
           <p className="title">Más artistas:</p>

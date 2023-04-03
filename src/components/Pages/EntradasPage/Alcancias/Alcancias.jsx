@@ -23,7 +23,7 @@ export const Alcancias = ({ idioma }) => {
         <a
           target="_blank"
           href="https://alcancias.armatuvaca.com/fep2023"
-          className="principalButtom"
+          className="principalButtom ga4-call_to_action-entradas-alcancias"
         >
           {idioma === "ESP" ? <> IR A ALCANCÍAS</> : <>GO TO PIGGY BANKS</>}
         </a>

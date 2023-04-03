@@ -3,6 +3,7 @@ import { Loader } from "../../Common/Loader";
 import { scrollElement } from "../../helpers/ScrollAnimations";
 import { useFetch } from "../../hooks/useFetch";
 import { SponsorsBanner } from "./SponsorsBanner";
+import { SponsorsItem } from "./SponsorsItem";
 
 export const Sponsors = () => {
   const { data: p_sponsors, isLoading } = useFetch("/pagina-de-sponsors", {});
@@ -29,15 +30,7 @@ export const Sponsors = () => {
         {!isLoading && (
           <div className="content_cards">
             {p_sponsors.sponsors.map((item, i) => (
-              <div key={i} className={`card card_${i + 1}`}>
-                <div className="content_logo">
-                  <img className="imgPrueba" src={item.logo.url} alt="logo" />
-                </div>
-                <p>{item.info}</p>
-                <a target="_blank" href={item.url_VER_MAS}>
-                  VER MÁS
-                </a>
-              </div>
+              <SponsorsItem {...item} i={i} />
             ))}
           </div>
         )}

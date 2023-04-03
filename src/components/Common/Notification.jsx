@@ -1,18 +1,19 @@
-import React, { useState } from "react";
+import { useFetch } from "../hooks/useFetch";
 
 export const Notification = () => {
-  const [show, setShow] = useState(true);
   const onClose = () => {
     document.querySelector(".notification").classList.add("hideNotification");
-
-    setTimeout(() => {
-        setShow(false)
-    }, 1000);
   };
+
+  const { data } = useFetch("/notificacion", {});
+
+  if (!data.activado) {
+    return null;
+  }
 
   return (
     <>
-      {setShow && (
+      {Object.keys(data).length !== 0 && (
         <div className="notification">
           <div className="close" onClick={onClose}>
             X
@@ -24,27 +25,26 @@ export const Notification = () => {
           />
 
           <div className="info">
-            {/* <p>Titulo</p> */}
             <p>
-              ¡Haz parte de nuestro festival! Si eres emprendedor, suscríbete
-              aquí y sé parte del FEP2023.
+              <strong>{data.titulo}</strong>
             </p>
+            <p>{data.descripcion}</p>
           </div>
 
           <div className="boton_contain">
             <a
-              href="https://forms.gle/vJEBwy9UiP5qDWn38"
+              href={data.url_boton}
               target="_blank"
-              className="boton"
+              className="boton Suscribirse home"
             >
-              SUSCRIBIRSE
+              {data.texto_boton}
             </a>
 
-            <img
+            {/* <img
               className="logo_vassar"
               src="/assets/notification/logo_vassar.png"
               alt="logo_vassar"
-            />
+            /> */}
           </div>
         </div>
       )}

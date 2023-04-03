@@ -1,0 +1,249 @@
+.sostenibilidad_page {
+  overflow: hidden;
+  &_banner {
+    height: 60vh;
+    position: relative;
+    max-height: 700px;
+
+    @media (min-width: 1024px) {
+      height: 90vh;
+    }
+    .info {
+      h2 {
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
+
+      @media (min-width: 1024px) {
+        width: 40%;
+        position: absolute;
+        top: 30%;
+      }
+    }
+    .nube {
+      position: absolute;
+      width: 150px;
+    }
+
+    .nube1 {
+      left: -50px;
+      bottom: 25%;
+    }
+
+    .nube2 {
+      right: -50px;
+      bottom: 20%;
+    }
+
+    .personaje {
+      position: absolute;
+      width: 100%;
+      height: 35%;
+      object-fit: contain;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0px auto;
+
+      @media (min-width: 1024px) {
+        height: 90%;
+        left: initial;
+        right: 0;
+        width: 50%;
+      }
+    }
+    .suelo {
+      height: 10%;
+      background-color: #82c76f;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      border-top: 2px solid black;
+    }
+  }
+
+  .sostenibilidad_items {
+    flex-wrap: wrap;
+
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+  }
+
+  .sostenibilidad_item {
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    .imagen {
+      width: 50%;
+      height: 45%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      background: url("/assets/sostenibilidad/1_pajaro.png");
+      background-position: left;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      margin: 0px auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-family: "greycliffcf-bold";
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 1024px) {
+      width: 50%;
+      display: flex;
+      justify-content: end;
+
+      .containerAll {
+        width: 60%;
+        margin: initial;
+        padding-right: 10%;
+      }
+
+      h3 {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .sostenibilidad_item:nth-child(1) {
+    background-color: #807ab9;
+    border-top: 2px solid black;
+  }
+
+  .sostenibilidad_item:nth-child(2) {
+    background-color: #30a7de;
+
+    .imagen {
+      left: initial;
+      right: 0;
+      top: -50px;
+      height: 55%;
+      background: url("/assets/sostenibilidad/2_planta1.png");
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: 1024px) {
+      border-top: 2px solid black;
+
+      .imagen {
+        top: initial;
+        bottom: -50px;
+        z-index: 1;
+      }
+    }
+  }
+
+  .sostenibilidad_item:nth-child(2n) {
+    justify-content: start;
+
+    @media (min-width: 1024px) {
+      .containerAll {
+        padding-right: 0%;
+        padding-left: 10%;
+      }
+      border-left: 2px solid black;
+    }
+  }
+
+  .sostenibilidad_item:nth-child(3) {
+    background-color: #82c76f;
+
+    .imagen {
+      top: -60px;
+      height: 55%;
+      background: url("/assets/sostenibilidad/3_flor.png");
+      background-position: left;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .sostenibilidad_item:nth-child(4) {
+    background-color: #f59686;
+
+    .imagen {
+      left: initial;
+      right: 0;
+      top: -50px;
+      height: 55%;
+      background: url("/assets/sostenibilidad/4_planta2.png");
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: 1024px) {
+      .imagen {
+        top: initial;
+        bottom: -50px;
+        z-index: 1;
+      }
+    }
+  }
+
+  .sostenibilidad_item:nth-child(5n) {
+    background-color: #807ab9;
+  }
+
+  .sostenibilidad_item:nth-child(6n) {
+    background-color: #30a7de;
+
+    .imagen {
+      left: initial;
+      right: 0;
+      top: -50px;
+      height: 55%;
+      background: url("/assets/sostenibilidad/2_planta1.png");
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: 1024px) {
+      .imagen {
+        top: initial;
+        bottom: -50px;
+        z-index: 1;
+      }
+    }
+  }
+
+  .know_more {
+    width: 100%;
+    background-color: #82c76f !important;
+    justify-content: center !important;
+
+    .imagen {
+      top: -60px;
+      height: 55%;
+      background: url("/assets/sostenibilidad/3_flor.png");
+      background-position: left;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .containerAll {
+      padding-right: 0%;
+      padding-left: 0% !important;
+    }
+  }
+}

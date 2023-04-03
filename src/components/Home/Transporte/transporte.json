@@ -4,22 +4,22 @@
             {
                 "tipo": "IDA",
                 "tipo_ingles": "ONE WAY TO",
-                "precio": "$ 63.000 COP",
-                "full_precio": "$ 75.000 COP",
+                "precio": "$ 110.000 COP",
+                "full_precio": "$ 129.000 COP",
                 "combo_3_dias": true
             },
             {
                 "tipo": "REGRESO",
                 "tipo_ingles": "ONE WAY FROM",
-                "precio": "$ 88.000 COP",
-                "full_precio": "$ 105.000 COP",
+                "precio": "$ 80.000 COP",
+                "full_precio": "$ 95.000 COP",
                 "combo_3_dias": true
             },
             {
                 "tipo": "ROUND TRIP",
                 "tipo_ingles": "ROUND TRIP",
-                "precio": "$ 113.000 COP",
-                "full_precio": "$ 135.000 COP",
+                "precio": "$ 145.000 COP",
+                "full_precio": "$ 169.000 COP",
                 "combo_3_dias": true
             }
         ],
@@ -27,22 +27,22 @@
             {
                 "tipo": "IDA",
                 "tipo_ingles": "ONE WAY TO",
-                "precio": "$ 84.000 COP",
-                "full_precio": "$ 100.000 COP",
+                "precio": "$ 145.000 COP",
+                "full_precio": "$ 170.000 COP",
                 "combo_3_dias": true
             },
             {
                 "tipo": "REGRESO",
                 "tipo_ingles": "ONE WAY FROM",
-                "precio": "$ 117.000 COP",
-                "full_precio": "$ 140.000 COP",
+                "precio": "$ 105.000 COP",
+                "full_precio": "$ 125.000 COP",
                 "combo_3_dias": true
             },
             {
                 "tipo": "ROUND TRIP",
                 "tipo_ingles": "ROUND TRIP",
-                "precio": "$ 151.000 COP",
-                "full_precio": "$ 180.000 COP",
+                "precio": "$ 185.000 COP",
+                "full_precio": "$ 215.000 COP",
                 "combo_3_dias": true
             }
         ]
